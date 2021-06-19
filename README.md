@@ -1,6 +1,8 @@
 # Pack d'Extension SIN
 Collection  d'extension pour travailler en SIN.
 
+![Logo](image/Abriand-SIN.png)
+
 ## Description
 * Fournis les outils nécessaires pour développer correctement en **Python** et en **CPP** sur cartes **Arduino**. 
 * Traduis VSCode en **Français**.
