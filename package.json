@@ -2,18 +2,21 @@
     "name": "abriand-sin",
     "displayName": "Abriand SIN",
     "description": "Pack d'extension  à destination des élèves de TSTI2D SIN du lycée Aristide Briand.",
-    "version": "0.0.1",
+    "version": "0.0.3",
     "author": {
 		"name": "Frank SAURET"
 	},
     "publisher": "electropol-fr",
+    "repository": {
+		"type": "git",
+		"url": "https://github.com/frank4466/abriand-sin"
+	},
     "license": "MIT",
     "engines": {
         "vscode": "^1.46.0"
     },
     "icon": "image/LogoAbriandSIN.png",
     "keywords": [
-		"arduino",
 		"python",
 		"french"
 	],
@@ -24,16 +27,12 @@
         "aaron-bond.better-comments", 
         "CoenraadS.bracket-pair-colorizer-2", 
         "dongli.python-preview", 
-        "IBM.output-colorizer", 
         "KevinRose.vsc-python-indent", 
         "MS-CEINTL.vscode-language-pack-fr", 
         "ms-python.python", 
         "ms-python.vscode-pylance", 
-        "ms-vscode.cpptools", 
-        "ronaldosena.arduino-snippets", 
         "SonarSource.sonarlint-vscode", 
         "VisualStudioExptTeam.vscodeintellicode", 
-        "vsciot-vscode.vscode-arduino", 
         "zhoufeng.pyqt-integration"
     ]
 }
