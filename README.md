@@ -7,12 +7,10 @@ Collection  d'extension pour travailler en SIN.
 * Fournis les outils nécessaires pour développer correctement en **Python**. 
 * Traduis VSCode en **Français**.
 * Facilite le codage avec :
-    * indentation automatique, 
-    * extrait de code, 
-    * mise en évidence des paires de parenthèses, 
-    * colorisation de la sortie,
-    * développement assisté par AI,
-    * Amélioration des commentaires,
+    * Indentation automatique, 
+    * Extrait de code, 
+    * Mise en évidence des paires de parenthèses, 
+    * Amélioration des commentaires (voir exemples ci-dessous),
     * Aperçu de l'exécution du python.
 
 ## Extensions dans ce pack
@@ -23,7 +21,6 @@ Collection  d'extension pour travailler en SIN.
 * [PYQT Integration](https://marketplace.visualstudio.com/items?itemName=zhoufeng.pyqt-integration)
 * [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python) - IntelliSense (Pylance), Linting, Débogage (multithread, à distance), Jupyter Notebooks, formatage de code, refactorisation, tests unitaires, etc.
 * [Python Preview](https://marketplace.visualstudio.com/items?itemName=dongli.python-preview) - Fournir un aperçu de l'exécution de Python.
-* [SonarLint](https://marketplace.visualstudio.com/items?itemName=SonarSource.sonarlint-vscode) - SonarLint est une extension IDE qui vous aide à détecter et à résoudre les problèmes de qualité lorsque vous écrivez du code en JavaScript, TypeScript, Python, Java, HTML et PHP.
 * [Visual Studio IntelliCode](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode) - Développement assisté par IA
 * [French Language Pack for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=MS-CEINTL.vscode-language-pack-fr ) - Extension de pack de langue pour le français
 * [Pylance](https://marketplace.visualstudio.com/items?itemName=ms-python.vscode-pylance) - Un serveur de langage performant et riche en fonctionnalités pour Python dans VS Code

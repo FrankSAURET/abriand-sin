@@ -2,7 +2,7 @@
     "name": "abriand-sin",
     "displayName": "Abriand SIN",
     "description": "Pack d'extension  à destination des élèves de TSTI2D SIN du lycée Aristide Briand.",
-    "version": "0.0.3",
+    "version": "0.0.5",
     "author": {
 		"name": "Frank SAURET"
 	},
@@ -31,7 +31,6 @@
         "MS-CEINTL.vscode-language-pack-fr", 
         "ms-python.python", 
         "ms-python.vscode-pylance", 
-        "SonarSource.sonarlint-vscode", 
         "VisualStudioExptTeam.vscodeintellicode", 
         "zhoufeng.pyqt-integration"
     ]
