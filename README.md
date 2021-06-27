@@ -25,5 +25,6 @@ Collection  d'extension pour travailler en SIN.
 * [French Language Pack for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=MS-CEINTL.vscode-language-pack-fr ) - Extension de pack de langue pour le français
 * [Pylance](https://marketplace.visualstudio.com/items?itemName=ms-python.vscode-pylance) - Un serveur de langage performant et riche en fonctionnalités pour Python dans VS Code
 * [Python Indent](https://marketplace.visualstudio.com/items?itemName=KevinRose.vsc-python-indent) - Corriger l'indentation Python.
+* [Python Docstring Generator](https://marketplace.visualstudio.com/items?itemName=njpwerner.autodocstring) - Génération rapide de docstring avec """
+* [Power Header](https://marketplace.visualstudio.com/items?itemName=epivision.vscode-file-header) - Ajout d'en-tête automatique avec ctrl+alt+h
 
-**Enjoy!**
