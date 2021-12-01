@@ -1,6 +1,6 @@
 {
     "name": "abriand-sin",
-    "displayName": "Abriand SIN",
+    "displayName": "ABriand SIN",
     "description": "Pack d'extension  à destination des élèves de TSTI2D SIN du lycée Aristide Briand.",
     "version": "0.0.6",
     "author": {
@@ -9,7 +9,7 @@
     "publisher": "electropol-fr",
     "repository": {
 		"type": "git",
-		"url": "https://github.com/frank4466/abriand-sin"
+		"url": "https://github.com/FrankSAURET/abriand-sin"
 	},
     "license": "MIT",
     "engines": {
