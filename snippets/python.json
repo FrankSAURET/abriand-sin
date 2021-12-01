@@ -1,0 +1,64 @@
+{
+	// prefix est la chaine appelant le snippet, body est le snippet. Le texte du début s'affiche au coté du snippet.
+	//- $1, $2 permetteent de naviguer avec la tabulation et on peut rajouter du texte ${1:label}, ${2:un autre } pour créer des emplacements. Les emplacements avec le même numéro changeront ensemble.
+	//- $0 définit le dernier emplacement.
+	// Exemple:
+	// "": {
+	// 	"prefix": [""],
+	// 	"body": [
+	// 		"",
+	// 		""
+	// 	],
+	// 	"description": ""
+	// }
+	"Fenêtre PyQT6": {
+		"prefix": [
+			"fen",
+			"QtFen"
+		],
+		"body": [
+			"from PyQt${1:5 ou 6 puis tabulation }.QtWidgets import QApplication, QWidget",
+			"from Ui_${2:Nom de la Fenetre  puis tabulation } import *",
+			"",
+			"",
+			"class ${2}(QWidget, Ui_Form):",
+			"\tdef __init__(self,parent=None):",
+			"\t\tsuper ().__init__ (parent)",
+			"\t\tself.setupUi (self) ",
+			"\t\t# Cette procédure est à compléter avec l’initialisation de votre fenêtre.",
+			"",
+			"\t# Insérez ici vos récepteurs (slot)",
+			"\t$0",
+			"",
+			"app = QApplication ([])",
+			"window = ${2}()",
+			"window.show ()",
+			"app.exec ()"
+		],
+		"description": "Insère le code pour lancer une fenêtre issue de Qt."
+	},
+	"Bouton PyQt6": {
+		"prefix": [
+			"bout",
+			"QtBout"
+		],
+		"body": [
+			"def on_${1: nom du bouton puis tabulation }_clicked(self):",
+			"\t$0"
+		],
+		"description": "Insère un slot bouton Qt"
+	},
+	"Slider PyQt6": {
+		"prefix": [
+			"slid",
+			"QtSlid"
+		],
+		"body": [
+			"def on_${1: nom du slider puis tabulation }_sliderMoved(self,val):",
+			"\t$0"
+		],
+		"description": ""
+	}
+}
+
+

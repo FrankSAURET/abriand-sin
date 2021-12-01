@@ -2,7 +2,7 @@
     "name": "abriand-sin",
     "displayName": "ABriand SIN",
     "description": "Pack d'extension  à destination des élèves de TSTI2D SIN du lycée Aristide Briand.",
-    "version": "0.0.6",
+    "version": "0.0.7",
     "author": {
 		"name": "Frank SAURET"
 	},
@@ -25,7 +25,6 @@
     ],
     "extensionPack": [ 
         "aaron-bond.better-comments", 
-        "CoenraadS.bracket-pair-colorizer-2", 
         "dongli.python-preview", 
         "KevinRose.vsc-python-indent", 
         "MS-CEINTL.vscode-language-pack-fr", 
