@@ -12,11 +12,12 @@ Collection  d'extension pour travailler en SIN.
     * Amélioration des commentaires (voir exemples ci-dessous),
     * Aperçu de l'exécution du python,
     * Quelques snippets.
+* Collaboration avec live share.    
 
 ## Les snippets pour pyqt  
-* **Fen** : Ajoute le code permettant de lier une fenètre dessinée dans Qt Designer.
-* **QtBout** : Ajoute le slot automatique pour un bouton.
-* **QtSlid** : Ajoute le slot automatique pour un slider.
+* **QtFen** ou Fen : Ajoute le code permettant de lier une fenètre dessinée dans Qt Designer.
+* **QtBout** ou Bout : Ajoute le slot automatique pour un bouton.
+* **QtSlid** ou Slid  : Ajoute le slot automatique pour un slider.
 
 ## Extensions dans ce pack
 * [Better Comments](https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments) - Améliorez vos commentaires de code en annotant avec des alertes, des informations, des tâches à faire et plus encore !
@@ -30,4 +31,5 @@ Collection  d'extension pour travailler en SIN.
 * [Python Indent](https://marketplace.visualstudio.com/items?itemName=KevinRose.vsc-python-indent) - Corriger l'indentation Python.
 * [Python Docstring Generator](https://marketplace.visualstudio.com/items?itemName=njpwerner.autodocstring) - Génération rapide de docstring avec """
 * [Power Header](https://marketplace.visualstudio.com/items?itemName=epivision.vscode-file-header) - Ajout d'en-tête automatique avec ctrl+alt+h
+* [Live Share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare) - Collaboration en ligne.
 

@@ -1,38 +1,53 @@
 {
     "name": "abriand-sin",
     "displayName": "ABriand SIN",
-    "description": "Pack d'extension  à destination des élèves de TSTI2D SIN du lycée Aristide Briand.",
-    "version": "0.0.7",
+    "description": "Pack d'extension à destination des élèves de TSTI2D SIN du lycée Aristide Briand.",
+    "version": "0.0.8",
     "author": {
-		"name": "Frank SAURET"
-	},
+        "name": "Frank SAURET"
+    },
     "publisher": "electropol-fr",
     "repository": {
-		"type": "git",
-		"url": "https://github.com/FrankSAURET/abriand-sin"
-	},
+        "type": "git",
+        "url": "https://github.com/FrankSAURET/abriand-sin"
+    },
     "license": "MIT",
     "engines": {
         "vscode": "^1.46.0"
     },
     "icon": "image/LogoAbriandSIN.png",
     "keywords": [
-		"python",
-		"french"
-	],
-    "categories": [
-        "Extension Packs"
+        "python",
+        "french",
+        "Qt",
+        "PyQt"
     ],
-    "extensionPack": [ 
-        "aaron-bond.better-comments", 
-        "dongli.python-preview", 
-        "KevinRose.vsc-python-indent", 
-        "MS-CEINTL.vscode-language-pack-fr", 
-        "ms-python.python", 
-        "ms-python.vscode-pylance", 
-        "VisualStudioExptTeam.vscodeintellicode", 
+    "categories": [
+        "Extension Packs",
+        "Snippets"
+    ],
+    "extensionPack": [
+        "aaron-bond.better-comments",
+        "dongli.python-preview",
+        "KevinRose.vsc-python-indent",
+        "MS-CEINTL.vscode-language-pack-fr",
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "VisualStudioExptTeam.vscodeintellicode",
         "zhoufeng.pyqt-integration",
         "njpwerner.autodocstring",
-        "epivision.vscode-file-header"
-    ]
+        "epivision.vscode-file-header",
+        "MS-vsliveshare.vsliveshare"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "python",
+                "path": "./snippets/python.json"
+            }
+        ],
+        "properties":{
+            "editor.autoClosingBrackets": "always"
+        }
+    }
 }
