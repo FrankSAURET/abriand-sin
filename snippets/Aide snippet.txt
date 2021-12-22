@@ -1,0 +1,13 @@
+"prefix" est la chaine appelant l'extrait de code (snippet), "body" est l'extrait de code. Le texte du début s'affiche au côté de l'extrait de code.
+	- $1, $2 permettent de naviguer avec la tabulation et on peut rajouter du texte ${1:label}, ${2:un autre } pour créer des emplacements. 
+	Les emplacements avec le même numéro changeront ensemble.
+	- $0 définit le dernier emplacement.
+Exemple:
+"": {
+	"prefix": [""],
+	"body": [
+		"",
+		""
+	],
+	"description": ""
+}

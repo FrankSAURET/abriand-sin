@@ -12,10 +12,11 @@ Collection  d'extension pour travailler en SIN.
     * Amélioration des commentaires (voir exemples ci-dessous),
     * Aperçu de l'exécution du python,
     * Quelques snippets.
-* Collaboration avec live share.    
+* Collaboration avec live share. 
+* Configuration du poste de travail (PyQt et Header) - lancer la commande **F1** puis « **abriand-sin : configurer** ».   
 
 ## Les snippets pour pyqt  
-* **QtFen** ou Fen : Ajoute le code permettant de lier une fenètre dessinée dans Qt Designer.
+* **QtForm** ou Form : Ajoute le code permettant de lier un formulaire dessiné dans Qt Designer.
 * **QtBout** ou Bout : Ajoute le slot automatique pour un bouton.
 * **QtSlid** ou Slid  : Ajoute le slot automatique pour un slider.
 
