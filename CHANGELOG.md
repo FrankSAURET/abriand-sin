@@ -1,8 +1,8 @@
 # Change Log
 
 ## Released
-##### [1.0.0] - 15 décembre 2021
-* Ajout de la configuration automatique.
+##### [0.1.0] - 26 décembre 2021
+* Ajout de la configuration automatique - lancer la commande **F1** puis « **abriand-sin : configurer** ».
 ##### [0.0.8] - 4 décembre 2021
 * Ajout de live share.
 * Correction pour les snippets Qt qui ne marchaient pas.

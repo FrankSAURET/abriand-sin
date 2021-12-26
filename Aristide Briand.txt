@@ -1,8 +1,16 @@
+\n
+ _______       _            _     _          ______        _                 _ \n
+(_______)     (_)       _  (_)   | |        (____  \      (_)               | |\n
+ _______  ____ _  ___ _| |_ _  __| |_____    ____)  ) ____ _ _____ ____   __| |\n
+|  ___  |/ ___) |/___|_   _) |/ _  | ___ |  |  __  ( / ___) (____ |  _ \ / _  |\n
+| |   | | |   | |___ | | |_| ( (_| | ____|  | |__)  ) |   | / ___ | | | ( (_| |\n
+|_|   |_|_|   |_(___/   \__)_|\____|_____)  |______/|_|   |_\_____|_| |_|\____|\n
+                                                                               \n
+Auteur : <author> (<email>)\n
+$TM_FILENAME (Ɔ) $CURRENT_YEAR\n
+Description : ${1:description}\n
+Créé le :  $CURRENT_DATE $CURRENT_MONTH_NAME $CURRENT_YEAR à $CURRENT_HOUR:$CURRENT_MINUTE \n
+Dernière modification : !date!\n
 
- _______       _            _     _          ______        _                 _ 
-(_______)     (_)       _  (_)   | |        (____  \      (_)               | |
- _______  ____ _  ___ _| |_ _  __| |_____    ____)  ) ____ _ _____ ____   __| |
-|  ___  |/ ___) |/___|_   _) |/ _  | ___ |  |  __  ( / ___) (____ |  _ \ / _  |
-| |   | | |   | |___ | | |_| ( (_| | ____|  | |__)  ) |   | / ___ | | | ( (_| |
-|_|   |_|_|   |_(___/   \__)_|\____|_____)  |______/|_|   |_\_____|_| |_|\____|
-                                                                               
+
+\nAuteur : <author> (email)\n$TM_FILENAME (Ɔ) $CURRENT_YEAR\nDescription : ${1:description}\nCréé le :  $CURRENT_DATE $CURRENT_MONTH_NAME $CURRENT_YEAR à $CURRENT_HOUR:$CURRENT_MINUTE \nDernière modification : !date! !time!\n

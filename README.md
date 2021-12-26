@@ -1,5 +1,11 @@
 # Pack d'Extension SIN
 Collection  d'extension pour travailler en SIN.
+<p align="center">
+<a href="https://marketplace.visualstudio.com/items?itemName=electropol-fr.abriand-sin&ssr=false#overview"><img src="https://badgen.net/vs-marketplace/v/electropol-fr.abriand-sin?icon=github" alt="vs-marketplace version"></a>
+<img src="https://badgen.net/vs-marketplace/i/electropol-fr.abriand-sin" alt="vs-marketplace installs">
+<img src="https://badgen.net/vs-marketplace/d/electropol-fr.abriand-sin" alt="vs-marketplace downloads">
+<img src="https://badgen.net/vs-marketplace/rating/electropol-fr.abriand-sin" alt="vs-marketplace rating">
+</p>
 
 ![Logo](image/Abriand-SIN.png)
 
@@ -15,7 +21,7 @@ Collection  d'extension pour travailler en SIN.
 * Collaboration avec live share. 
 * Configuration du poste de travail (PyQt et Header) - lancer la commande **F1** puis « **abriand-sin : configurer** ».   
 
-## Les snippets pour pyqt  
+## Les snippets pour PyQt  
 * **QtForm** ou Form : Ajoute le code permettant de lier un formulaire dessiné dans Qt Designer.
 * **QtBout** ou Bout : Ajoute le slot automatique pour un bouton.
 * **QtSlid** ou Slid  : Ajoute le slot automatique pour un slider.
