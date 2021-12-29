@@ -28,13 +28,13 @@ export function activate(context: vscode.ExtensionContext) {
  _______  ____ _  ___ _| |_ _  __| |_____    ____)  ) ____ _ _____ ____   __| |
 |  ___  |/ ___) |/___|_   _) |/ _  | ___ |  |  __  ( / ___) (____ |  _ \\ / _  |
 | |   | | |   | |___ | | |_| ( (_| | ____|  | |__)  ) |   | / ___ | | | ( (_| |
-|_|   |_|_|   |_(___/   \\__)_|\\____|_____)  |______/|_|   |_\_____|_| |_|\\____|
+|_|   |_|_|   |_(___/   \\__)_|\\____|_____)  |______/|_|   |_\\_____|_| |_|\\____|
 	
 Auteur: <author>(<email>) 
 $TM_FILENAME(Ɔ) $CURRENT_YEAR
 Description : \${1:Saisissez la description puis « Tab »}
 Créé le :  !date! 
-Dernière modification : dimanche 26 décembre 2021, 18:43:23
+Dernière modification : mercredi 29 décembre 2021, 18:00:58
 `;
 		let powerHeaderUpdateContent = ["Dernière modification :\\s+(.+)=!date!"];
 		let changerNom = 'Changer le nom ou l\'adresse mail';
