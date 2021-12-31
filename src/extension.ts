@@ -1,17 +1,31 @@
 // The module 'vscode' contains the VS Code extensibility API
 // Import the module and reference it with the alias vscode in your code below
 import * as vscode from 'vscode';
-
-
+const semver = require('semver');
 
 // this method is called when your extension is activated
 // your extension is activated the very first time the command is executed
 export function activate(context: vscode.ExtensionContext) {
-
 	// Use the console to output diagnostic information (console.log) and errors (console.error)
 	// This line of code will only be executed once when your extension is activated
-		//console.log('« abriand-sin » est maintenant configuré »');
-
+	let numVersionPre = String(vscode.workspace.getConfiguration("ABriandSIN").get("VersionNb"));
+	let jamaisLance=false;
+	if (!semver.valid(numVersionPre)) { 
+		numVersionPre = "0.0.0"; 
+		jamaisLance=true;
+	}
+	//§ Changer ici le numéro de version qui demande une reconfiguration
+	if (semver.gt("0.1.0", numVersionPre)) {
+		let daccord = 'Ok';
+		vscode.window.showInformationMessage(`
+			Pour configurer automatiquement l'extension ABriand SIN faites Ok.
+			Sinon vous pourrez le faire aprés exécutant la commande « abriand-sin : configurer » `, { modal: true }, daccord)
+			.then(async selection => {
+				if (selection === daccord) {
+					vscode.commands.executeCommand('abriand-sin.configurer');
+				}
+			});
+	}
 
 	// The command has been defined in the package.json file
 	// Now provide the implementation of the command with registerCommand
@@ -19,9 +33,20 @@ export function activate(context: vscode.ExtensionContext) {
 	let disposable = vscode.commands.registerCommand('abriand-sin.configurer', () => {
 		//$ Configuration automatique pour les postes lycée
 		//* Header
-		let nomUtilisateur=process.env['USERNAME']?.trim();
-		nomUtilisateur=nomUtilisateur?.split(" ",2).reverse().join(' ');
-		let adresseMail : string|undefined = nomUtilisateur?.replace(" ",".").toLowerCase()+".pro@gmail.com";
+		let nomUtilisateur: string | undefined = "";
+		let adresseMail: string | undefined="";
+		if(jamaisLance){
+			nomUtilisateur = process.env['USERNAME']?.trim();
+			nomUtilisateur = nomUtilisateur?.split(" ", 2).reverse().join(' ');
+			adresseMail = nomUtilisateur?.replace(" ", ".").toLowerCase() + ".pro@gmail.com";
+			jamaisLance=false;
+		}
+		else
+		{	
+			
+			nomUtilisateur = String(vscode.workspace.getConfiguration("powerHeader").get("variables")).split(",", 2)[0].split("=")[1].replace(/'/gi, "");
+			adresseMail = String(vscode.workspace.getConfiguration("powerHeader").get("variables")).split(",", 2)[1].split("=")[1].replace(/'/gi, "");
+		}
 		let powerHeaderTemplateHeader = `
  _______       _            _     _          ______        _                 _ 
 (_______)     (_)       _  (_)   | |        (____  \\      (_)               | |
@@ -34,14 +59,14 @@ Auteur: <author>(<email>)
 $TM_FILENAME(Ɔ) $CURRENT_YEAR
 Description : \${1:Saisissez la description puis « Tab »}
 Créé le :  !date! 
-Dernière modification : mercredi 29 décembre 2021, 18:00:58
+Dernière modification : vendredi 31 décembre 2021, 15:02:58
 `;
 		let powerHeaderUpdateContent = ["Dernière modification :\\s+(.+)=!date!"];
 		let changerNom = 'Changer le nom ou l\'adresse mail';
 		let laisserNom = 'Laisser comme ça';
 		vscode.window.showInformationMessage(`
-			Pour les entêtes de fichier,\n
-			Le nom d'utilisateur est : ${nomUtilisateur}\n
+			Pour les entêtes de fichier,
+			Le nom d'utilisateur est : ${nomUtilisateur}
 			l'adresse mail est : ${adresseMail}`, { modal: true }, changerNom, laisserNom)
 			.then(async selection => {
 				if (selection === changerNom) {
@@ -63,7 +88,7 @@ Dernière modification : mercredi 29 décembre 2021, 18:00:58
 		vscode.workspace.getConfiguration("powerHeader").update("variables", powerHeaderVariables, vscode.ConfigurationTarget.Global);
 		vscode.workspace.getConfiguration("powerHeader.autoInsert").update("enable", true, vscode.ConfigurationTarget.Global);
 		vscode.workspace.getConfiguration("powerHeader.autoInsert").update("enable", true, vscode.ConfigurationTarget.Global);
-		vscode.workspace.getConfiguration("powerHeader").update("template",powerHeaderTemplateHeader,vscode.ConfigurationTarget.Global);
+		vscode.workspace.getConfiguration("powerHeader").update("template", powerHeaderTemplateHeader, vscode.ConfigurationTarget.Global);
 		vscode.workspace.getConfiguration("powerHeader.update").update("enable", "save", vscode.ConfigurationTarget.Global);
 		//* Bracket
 		let aide = 'Comment faire ? ';
@@ -94,11 +119,13 @@ Dernière modification : mercredi 29 décembre 2021, 18:00:58
 		vscode.workspace.getConfiguration("pyqt-integration.linguist").update("cmd", dossierQt + "linguist.exe", vscode.ConfigurationTarget.Global);
 		vscode.workspace.getConfiguration("pyqt-integration.pyuic").update("cmd", "pyuic" + numQt, vscode.ConfigurationTarget.Global);
 		vscode.workspace.getConfiguration("pyqt-integration.pyrcc").update("cmd", "pyrcc" + numQt, vscode.ConfigurationTarget.Global);
-		vscode.workspace.getConfiguration("pyqt-integration.pylupdate").update("cmd", "pylupdate"+numQt, vscode.ConfigurationTarget.Global);
+		vscode.workspace.getConfiguration("pyqt-integration.pylupdate").update("cmd", "pylupdate" + numQt, vscode.ConfigurationTarget.Global);
 		vscode.workspace.getConfiguration("pyqt-integration.pyuic.compile").update("addOptions", "--execute", vscode.ConfigurationTarget.Global);
 		//* Telemetry
 		vscode.workspace.getConfiguration("telemetry").update("telemetryLevel", false, vscode.ConfigurationTarget.Global);
 		//$ Fin de la configuration
+		let numVersionActu = vscode.extensions.getExtension("electropol-fr.abriand-sin")?.packageJSON["version"];
+		vscode.workspace.getConfiguration("ABriandSIN").update("VersionNb", numVersionActu, vscode.ConfigurationTarget.Global);
 		console.log('« abriand-sin » est maintenant configuré »');
 	});
 

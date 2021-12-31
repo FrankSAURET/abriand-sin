@@ -2,7 +2,7 @@
 	"name": "abriand-sin",
 	"displayName": "ABriand SIN",
 	"description": "Pack d'extension à destination des élèves de TSTI2D SIN du lycée Aristide Briand.",
-	"version": "0.1.1",
+	"version": "0.1.2",
 	"author": {
 		"name": "Frank SAURET",
 		"email": "frank.sauret.prof@gmail.com",
@@ -74,10 +74,22 @@
 		"MS-vsliveshare.vsliveshare"
 	],
 	"activationEvents": [
-		"onCommand:abriand-sin.configurer"
+		"*"
 	],
 	"main": "./dist/extension.js",
 	"contributes": {
+		"configuration": [
+			{
+				"title": "ABriand SIN",
+				"properties": {
+					"ABriandSIN.VersionNb": {
+						"type": "string",
+						"default": null,
+						"description": "Donne le numéro de la version de l'extension lors du dernier lancement de la commande « abriand-sin : configurer. Ne pas le changer manuellement. »"
+					}
+				}
+			}
+		],
 		"snippets": [
 			{
 				"language": "python",
@@ -121,6 +133,7 @@
 	"dependencies": {
 		"fso": "^2.7.0",
 		"fullname": "^4.0.1",
+		"semver": "^7.3.5",
 		"username": "^6.0.0"
 	}
 }
