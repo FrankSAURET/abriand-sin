@@ -59,7 +59,7 @@ Auteur: <author>(<email>)
 $TM_FILENAME(Ɔ) $CURRENT_YEAR
 Description : \${1:Saisissez la description puis « Tab »}
 Créé le :  !date! 
-Dernière modification : vendredi 31 décembre 2021, 15:02:58
+Dernière modification : 
 `;
 		let powerHeaderUpdateContent = ["Dernière modification :\\s+(.+)=!date!"];
 		let changerNom = 'Changer le nom ou l\'adresse mail';
@@ -122,7 +122,7 @@ Dernière modification : vendredi 31 décembre 2021, 15:02:58
 		vscode.workspace.getConfiguration("pyqt-integration.pylupdate").update("cmd", "pylupdate" + numQt, vscode.ConfigurationTarget.Global);
 		vscode.workspace.getConfiguration("pyqt-integration.pyuic.compile").update("addOptions", "--execute", vscode.ConfigurationTarget.Global);
 		//* Telemetry
-		vscode.workspace.getConfiguration("telemetry").update("telemetryLevel", false, vscode.ConfigurationTarget.Global);
+		vscode.workspace.getConfiguration("telemetry").update("telemetryLevel", "off", vscode.ConfigurationTarget.Global);
 		//$ Fin de la configuration
 		let numVersionActu = vscode.extensions.getExtension("electropol-fr.abriand-sin")?.packageJSON["version"];
 		vscode.workspace.getConfiguration("ABriandSIN").update("VersionNb", numVersionActu, vscode.ConfigurationTarget.Global);

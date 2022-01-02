@@ -85,7 +85,7 @@
 					"ABriandSIN.VersionNb": {
 						"type": "string",
 						"default": null,
-						"description": "Donne le numéro de la version de l'extension lors du dernier lancement de la commande « abriand-sin : configurer. Ne pas le changer manuellement. »"
+						"description": "Donne le numéro de la version de l'extension lors du dernier lancement de la commande « abriand-sin : configurer ». Ne pas le changer manuellement."
 					}
 				}
 			}
