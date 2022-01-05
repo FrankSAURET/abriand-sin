@@ -1,6 +1,6 @@
 // The module 'vscode' contains the VS Code extensibility API
 // Import the module and reference it with the alias vscode in your code below
-// Dernière modification : mercredi 5 janvier 2022, 13:56:27
+// Dernière modification : mercredi 5 janvier 2022, 14:23:49
 import * as vscode from 'vscode';
 const semver = require('semver');
 
@@ -10,10 +10,10 @@ export function activate(context: vscode.ExtensionContext) {
 	// Use the console to output diagnostic information (console.log) and errors (console.error)
 	// This line of code will only be executed once when your extension is activated
 	let numVersionPre = String(vscode.workspace.getConfiguration("ABriandSIN").get("VersionNb"));
-	let jamaisLance=false;
-	if (!semver.valid(numVersionPre)) { 
-		numVersionPre = "0.0.0"; 
-		jamaisLance=true;
+	let jamaisLance = false;
+	if (!semver.valid(numVersionPre)) {
+		numVersionPre = "0.0.0";
+		jamaisLance = true;
 	}
 	//§ Changer ici le numéro de version qui demande une reconfiguration
 	if (semver.gt("0.1.0", numVersionPre)) {
@@ -35,22 +35,27 @@ export function activate(context: vscode.ExtensionContext) {
 		//$ Configuration automatique pour les postes lycée
 		//* Header
 		let nomUtilisateur: string | undefined = "";
-		let adresseMail: string | undefined="";
-		if(jamaisLance){
+		let adresseMail: string | undefined = "";
+		// TODO revoir : il y a surement un meilleur moyen de trouver le nom du compte qui ne soit pas le login (voir username de node js)
+		if (jamaisLance) {
 			nomUtilisateur = process.env['NC']?.trim();
-			let prenom = nomUtilisateur?.split(" ", 2)[1].toLowerCase();
-			let nom = nomUtilisateur?.split(" ", 2)[0].toUpperCase();
-			if(prenom===undefined){prenom="";}
-			if (nom === undefined) { nom = ""; }
-			prenom = prenom.slice(0, 1).toUpperCase() + prenom.slice(1);
-			nomUtilisateur = prenom + " " + nom;
-			//nomUtilisateur?.split(" ", 2).reverse().join(' ');
-			adresseMail = nomUtilisateur?.replace(" ", ".").toLowerCase() + ".pro@gmail.com";
-			jamaisLance=false;
+			if (nomUtilisateur === undefined) { nomUtilisateur = process.env['username']?.trim(); }
+			try {
+				let prenom = nomUtilisateur?.split(" ", 2)[1].toLowerCase();
+				let nom = nomUtilisateur?.split(" ", 2)[0].toUpperCase();
+				if (prenom === undefined) { prenom = ""; }
+				if (nom === undefined) { nom = ""; }
+				prenom = prenom.slice(0, 1).toUpperCase() + prenom.slice(1);
+				nomUtilisateur = prenom + " " + nom;
+			}
+			finally{
+				//nomUtilisateur?.split(" ", 2).reverse().join(' ');
+				adresseMail = nomUtilisateur?.replace(" ", ".").toLowerCase() + ".pro@gmail.com";
+				jamaisLance = false;
+			}
 		}
-		else
-		{	
-			
+		else {
+
 			nomUtilisateur = String(vscode.workspace.getConfiguration("powerHeader").get("variables")).split(",", 2)[0].split("=")[1].replace(/'/gi, "");
 			adresseMail = String(vscode.workspace.getConfiguration("powerHeader").get("variables")).split(",", 2)[1].split("=")[1].replace(/'/gi, "");
 		}
