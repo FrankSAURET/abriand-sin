@@ -1,5 +1,6 @@
 // The module 'vscode' contains the VS Code extensibility API
 // Import the module and reference it with the alias vscode in your code below
+// Dernière modification : mercredi 5 janvier 2022, 13:56:27
 import * as vscode from 'vscode';
 const semver = require('semver');
 
@@ -36,8 +37,14 @@ export function activate(context: vscode.ExtensionContext) {
 		let nomUtilisateur: string | undefined = "";
 		let adresseMail: string | undefined="";
 		if(jamaisLance){
-			nomUtilisateur = process.env['USERNAME']?.trim();
-			nomUtilisateur = nomUtilisateur?.split(" ", 2).reverse().join(' ');
+			nomUtilisateur = process.env['NC']?.trim();
+			let prenom = nomUtilisateur?.split(" ", 2)[1].toLowerCase();
+			let nom = nomUtilisateur?.split(" ", 2)[0].toUpperCase();
+			if(prenom===undefined){prenom="";}
+			if (nom === undefined) { nom = ""; }
+			prenom = prenom.slice(0, 1).toUpperCase() + prenom.slice(1);
+			nomUtilisateur = prenom + " " + nom;
+			//nomUtilisateur?.split(" ", 2).reverse().join(' ');
 			adresseMail = nomUtilisateur?.replace(" ", ".").toLowerCase() + ".pro@gmail.com";
 			jamaisLance=false;
 		}

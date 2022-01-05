@@ -1,6 +1,9 @@
 # Change Log
 
 ## Released
+##### [0.1.4] - 2 janvier 2022
+* Suppression du français installé par ailleurs.
+* Correction de bugs mineurs.
 ##### [0.1.0] - 26 décembre 2021
 * Ajout de la configuration automatique - lancer la commande **F1** puis « **abriand-sin : configurer** ».
 ##### [0.0.8] - 4 décembre 2021
