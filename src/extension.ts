@@ -1,8 +1,9 @@
 // The module 'vscode' contains the VS Code extensibility API
 // Import the module and reference it with the alias vscode in your code below
-// Dernière modification : jeudi 6 janvier 2022, 16:26:48
+// Dernière modification : jeudi 6 janvier 2022, 17:19:22
 import * as vscode from 'vscode';
 const semver = require('semver');
+const fullName = require('fullname');
 
 // this method is called when your extension is activated
 // your extension is activated the very first time the command is executed
@@ -36,10 +37,10 @@ export function activate(context: vscode.ExtensionContext) {
 		//* Header
 		let nomUtilisateur: string | undefined = "";
 		let adresseMail: string | undefined = "";
-		let uname = process.env.USER || "";
 
-		// TODO revoir : il y a surement un meilleur moyen de trouver le nom du compte qui ne soit pas le login (voir username de node js)
 		if (jamaisLance) {
+			// La variable d'environement "NC" donne le nom suivi de tous les prénoms de l'utilisateur
+			// sur les PC lycée mais n'existe pas forcemment ailleurs.
 			nomUtilisateur = process.env['NC']?.trim()||"";
 			if (nomUtilisateur === "") { nomUtilisateur = process.env['username']?.trim()||""; }
 			try {
