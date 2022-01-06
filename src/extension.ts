@@ -1,9 +1,8 @@
 // The module 'vscode' contains the VS Code extensibility API
 // Import the module and reference it with the alias vscode in your code below
-// Dernière modification : jeudi 6 janvier 2022, 17:19:22
+// Dernière modification : jeudi 6 janvier 2022, 17:20:11
 import * as vscode from 'vscode';
 const semver = require('semver');
-const fullName = require('fullname');
 
 // this method is called when your extension is activated
 // your extension is activated the very first time the command is executed
