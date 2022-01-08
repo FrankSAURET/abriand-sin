@@ -1,6 +1,6 @@
 // The module 'vscode' contains the VS Code extensibility API
 // Import the module and reference it with the alias vscode in your code below
-// Dernière modification : vendredi 7 janvier 2022, 17:05:31
+// Dernière modification : samedi 8 janvier 2022, 18:22:26
 import * as vscode from 'vscode';
 const semver = require('semver');
 
@@ -36,20 +36,19 @@ export function activate(context: vscode.ExtensionContext) {
 		//* Header
 		let nomUtilisateur: string | undefined = "";
 		let adresseMail: string | undefined = "";
-		// TODO revoir : il y a surement un meilleur moyen de trouver le nom du compte qui ne soit pas le login (voir username de node js)
+
 		if (jamaisLance) {
-			nomUtilisateur = process.env['NC']?.trim();
-			if (nomUtilisateur === undefined) { nomUtilisateur = process.env['username']?.trim(); }
+			// La variable d'environement "NC" donne le nom suivi de tous les prénoms de l'utilisateur
+			// sur les PC lycée mais n'existe pas forcemment ailleurs.
+			nomUtilisateur = process.env['NC']?.trim()||"";
+			if (nomUtilisateur === "") { nomUtilisateur = process.env['username']?.trim()||""; }
 			try {
-				let prenom = nomUtilisateur?.split(" ", 2)[1].toLowerCase();
-				let nom = nomUtilisateur?.split(" ", 2)[0].toUpperCase();
-				if (prenom === undefined) { prenom = ""; }
-				if (nom === undefined) { nom = ""; }
+				let prenom = nomUtilisateur?.split(" ", 2)[1].toLowerCase()||"";
+				let nom = nomUtilisateur?.split(" ", 2)[0].toUpperCase()||"";
 				prenom = prenom.slice(0, 1).toUpperCase() + prenom.slice(1);
 				nomUtilisateur = prenom + " " + nom;
 			}
 			finally{
-				//nomUtilisateur?.split(" ", 2).reverse().join(' ');
 				adresseMail = nomUtilisateur?.replace(" ", ".").toLowerCase() + ".pro@gmail.com";
 				jamaisLance = false;
 			}
