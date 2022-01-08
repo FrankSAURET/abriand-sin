@@ -1,6 +1,10 @@
 # Change Log
 
 ## Released
+##### [0.1.5] -  2022
+* Ajout d'un diaporama de présentation.
+* Correction RegEx Power header.
+* Ajout de la configuration de better-comment.
 ##### [0.1.4] - 2 janvier 2022
 * Suppression du français installé par ailleurs.
 * Correction de bugs mineurs.

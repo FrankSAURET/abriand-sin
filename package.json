@@ -100,6 +100,43 @@
 				"command": "abriand-sin.configurer",
 				"title": "abriand-sin : Configurer vs code pour le travail en SIN"
 			}
+		],
+		"walkthroughs": [
+			{
+				"id": "ABriandSIN",
+				"title": "Bien commencer en SIN avec Visual Studio.",
+				"description": "Les bases de la programmation.",
+				"steps": [
+					{
+						"id": "configurer",
+						"title": "Configurer ABriand-SIN",
+						"description": "Réalise la configuration automatique de l'extension.\n[Lancer la configuration](command:abriand-sin.configurer)",
+						"media": {
+							"markdown": "configure.md"
+						},
+						"completionEvents": [
+							"oncommand:abriand-sin.configurer"
+						]
+					},
+					{
+						"id": "BetterComments",
+						"title": "Utiliser better comment.",
+						"description": "",
+						"media": {
+							"markdown":"bettercomment.md"
+						}
+					},
+					{
+						"id": "Snippet",
+						"title": "Utiliser les fragments de code.",
+						"description": "",
+						"media": {
+							"markdown": "snippet.md"
+						}
+					}
+
+				]
+			}
 		]
 	},
 	"scripts": {

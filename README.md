@@ -29,7 +29,6 @@ Collection  d'extension pour travailler en SIN.
 
 ## Extensions dans ce pack
 * [Better Comments](https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments) - Améliorez vos commentaires de code en annotant avec des alertes, des informations, des tâches à faire et plus encore !
-![Code annoté](image/better-comments.png)
 * [PYQT Integration](https://marketplace.visualstudio.com/items?itemName=zhoufeng.pyqt-integration)
 * [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python) - IntelliSense (Pylance), Linting, Débogage (multithread, à distance), Jupyter Notebooks, formatage de code, refactorisation, tests unitaires, etc.
 * [Python Preview](https://marketplace.visualstudio.com/items?itemName=dongli.python-preview) - Fournir un aperçu de l'exécution de Python.

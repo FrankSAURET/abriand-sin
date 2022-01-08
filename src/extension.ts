@@ -1,6 +1,6 @@
 // The module 'vscode' contains the VS Code extensibility API
 // Import the module and reference it with the alias vscode in your code below
-// Dernière modification : mercredi 5 janvier 2022, 14:23:49
+// Dernière modification : vendredi 7 janvier 2022, 17:05:31
 import * as vscode from 'vscode';
 const semver = require('semver');
 
@@ -73,7 +73,7 @@ Description : \${1:Saisissez la description puis « Tab »}
 Créé le :  !date! 
 Dernière modification : 
 `;
-		let powerHeaderUpdateContent = ["Dernière modification :\\s+(.+)=!date!"];
+		let powerHeaderUpdateContent = ["Dernière modification :\\s+([^\"]+)=!date!"];
 		let changerNom = 'Changer le nom ou l\'adresse mail';
 		let laisserNom = 'Laisser comme ça';
 		vscode.window.showInformationMessage(`
@@ -135,6 +135,112 @@ Dernière modification :
 		vscode.workspace.getConfiguration("pyqt-integration.pyuic.compile").update("addOptions", "--execute", vscode.ConfigurationTarget.Global);
 		//* Telemetry
 		vscode.workspace.getConfiguration("telemetry").update("telemetryLevel", "off", vscode.ConfigurationTarget.Global);
+		//* Better-comments
+		// let bcTag: string[] = [];
+		// bcTag.map({ backgroundColor: "#fafe0bf7", bold: false, color: "#FF2D00", italic: false, strikethrough: false, tag: "!", underline: false });
+		//let bctag = vscode.workspace.getConfiguration("better-comments").get("tags");
+		let bcTag = [
+			{
+				backgroundColor: "#fafe0bf7",
+				bold: false,
+				color: "#FF2D00",
+				italic: false,
+				strikethrough: false,
+				tag: "!",
+				underline: false,
+			},
+			{
+				backgroundColor: "transparent",
+				bold: false,
+				color: "#3498DB",
+				italic: false,
+				strikethrough: false,
+				tag: "?",
+				underline: false,
+			},
+			{
+				backgroundColor: "transparent",
+				bold: false,
+				color: "#59b800",
+				italic: false,
+				strikethrough: true,
+				tag: "//",
+				underline: false,
+			},
+			{
+				backgroundColor: "transparent",
+				bold: false,
+				color: "#FF8C00",
+				italic: false,
+				strikethrough: false,
+				tag: "todo",
+				underline: false,
+			},
+			{
+				backgroundColor: "#fed3b3d9",
+				bold: false,
+				italic: false,
+				strikethrough: false,
+				tag: "*",
+				underline: false,
+			},
+			{
+				backgroundColor: "#ff80cc",
+				bold: false,
+				color: "#f5002d",
+				italic: false,
+				strikethrough: false,
+				tag: "§",
+				underline: false,
+			},
+			{
+				backgroundColor: "#fd9117",
+				bold: false,
+				color: "#fff7ae",
+				italic: false,
+				strikethrough: false,
+				tag: "$",
+				underline: false,
+			},
+			{
+				backgroundColor: "#a9fcff",
+				bold: false,
+				color: "#1600bd",
+				italic: false,
+				strikethrough: false,
+				tag: "%",
+				underline: false,
+			},
+			{
+				backgroundColor: "#E7E6E6",
+				bold: true,
+				color: "#0072C7",
+				italic: false,
+				strikethrough: false,
+				tag: "1-",
+				underline: false,
+			},
+			{
+				backgroundColor: "#E7E6E6",
+				bold: false,
+				color: "#0072C7",
+				italic: false,
+				strikethrough: false,
+				tag: "2-",
+				underline: false,
+			},
+			{
+				backgroundColor: "#E7E6E6",
+				bold: false,
+				color: "#0072C7",
+				italic: true,
+				strikethrough: false,
+				tag: "3-",
+				underline: false,
+			},
+		];
+		vscode.workspace.getConfiguration("better-comments").update("tags", bcTag, vscode.ConfigurationTarget.Global);
+		vscode.workspace.getConfiguration("better-comments").update("highlightPlainText", true, vscode.ConfigurationTarget.Global);
 		//$ Fin de la configuration
 		let numVersionActu = vscode.extensions.getExtension("electropol-fr.abriand-sin")?.packageJSON["version"];
 		vscode.workspace.getConfiguration("ABriandSIN").update("VersionNb", numVersionActu, vscode.ConfigurationTarget.Global);

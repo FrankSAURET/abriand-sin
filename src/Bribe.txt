@@ -1,0 +1,7 @@
+Dernière modification :\s+(.+)=!date!
+
+. tout caractère Sauf le code de fin de ligne.
+(.+) un caractère au moins.
++ Il doit y avoir ou moins un élément de la lettre ou du groupe précédant le symbole.
+\ code d'échappement : introduits les caractères spéciaux.
+

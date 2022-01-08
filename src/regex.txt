@@ -1,0 +1,18 @@
+Dernière modification :\s+(.+)=!date!
+
+
+. tout caractère Sauf le code de fin de ligne.
+(.+) un caractère au moins.
++ Il doit y avoir ou moins un élément de la lettre ou du groupe précédant le symbole.
+\ code d'échappement : introduits les caractères spéciaux.
+\s code de séparation quelconque, incluant : espace blanc, tabulation, retour à la ligne, fin de page.
+\n fin de ligne.
+\r  code de retour à la ligne.
+
+Dernière modification :\s+([^"]+)=!date!
+
+Dernière modification :\s+([^"]+)=!date!
+
+Dernière modification :  Chaine à rechercher
+\s+  Avec une espace derrière
+([^"]+)  Tout caractère sauf " et ça se reproduit
