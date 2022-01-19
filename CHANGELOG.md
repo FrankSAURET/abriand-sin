@@ -1,7 +1,7 @@
 # Change Log
 
 ## Released
-##### [0.1.5] -  2022
+##### [0.1.6] - 9 janvier 2022
 * Ajout d'un diaporama de présentation.
 * Correction RegEx Power header.
 * Ajout de la configuration de better-comment.

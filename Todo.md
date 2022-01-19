@@ -1,1 +1,2 @@
-// TODO intégrer arduino
+TODO intégrer arduino
+TODO Rendre les chemins linux compatibles
