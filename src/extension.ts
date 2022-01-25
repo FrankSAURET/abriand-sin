@@ -1,6 +1,6 @@
 // The module 'vscode' contains the VS Code extensibility API
 // Import the module and reference it with the alias vscode in your code below
-// Dernière modification : samedi 8 janvier 2022, 18:22:26
+// Dernière modification : mardi 25 janvier 2022, 12:19:01
 import * as vscode from 'vscode';
 const semver = require('semver');
 

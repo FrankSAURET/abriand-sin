@@ -12,7 +12,6 @@ Collection  d'extension pour travailler en SIN.
 
 ## Description
 * Fournis les outils nécessaires pour développer correctement en **Python**. 
-* Traduis VSCode en **Français**.
 * Facilite le codage avec :
     * Indentation automatique, 
     * Extrait de code, 
@@ -20,7 +19,8 @@ Collection  d'extension pour travailler en SIN.
     * Aperçu de l'exécution du python,
     * Quelques snippets.
 * Collaboration avec live share. 
-* Configuration du poste de travail (PyQt et Header) - lancer la commande **F1** puis « **abriand-sin : configurer** ».   
+* Configuration du poste de travail (PyQt et Header) - lancer la commande **F1** puis « **abriand-sin : configurer** ».
+* Pour lancer le tuto, faire : « Aide > Prise en main > Ouvrir une procédure pas à pas... » et choisir « Bien commencer en SIN avec Visual Studio ».
 
 ## Les snippets pour PyQt  
 * **QtForm** ou Form : Ajoute le code permettant de lier un formulaire dessiné dans Qt Designer.
@@ -33,7 +33,6 @@ Collection  d'extension pour travailler en SIN.
 * [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python) - IntelliSense (Pylance), Linting, Débogage (multithread, à distance), Jupyter Notebooks, formatage de code, refactorisation, tests unitaires, etc.
 * [Python Preview](https://marketplace.visualstudio.com/items?itemName=dongli.python-preview) - Fournir un aperçu de l'exécution de Python.
 * [Visual Studio IntelliCode](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode) - Développement assisté par IA
-* [French Language Pack for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=MS-CEINTL.vscode-language-pack-fr ) - Extension de pack de langue pour le français
 * [Pylance](https://marketplace.visualstudio.com/items?itemName=ms-python.vscode-pylance) - Un serveur de langage performant et riche en fonctionnalités pour Python dans VS Code
 * [Python Indent](https://marketplace.visualstudio.com/items?itemName=KevinRose.vsc-python-indent) - Corriger l'indentation Python.
 * [Python Docstring Generator](https://marketplace.visualstudio.com/items?itemName=njpwerner.autodocstring) - Génération rapide de docstring avec """
