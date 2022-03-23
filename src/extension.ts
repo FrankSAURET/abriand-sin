@@ -1,6 +1,6 @@
 // The module 'vscode' contains the VS Code extensibility API
 // Import the module and reference it with the alias vscode in your code below
-// Dernière modification : mardi 25 janvier 2022, 12:19:01
+// Dernière modification : vendredi 11 février 2022, 19:04:03
 import * as vscode from 'vscode';
 const semver = require('semver');
 
@@ -114,11 +114,11 @@ Dernière modification :
 		vscode.workspace.getConfiguration("editor.guides").update("bracketPairs", true, vscode.ConfigurationTarget.Global);
 		vscode.workspace.getConfiguration("editor.guides").update("bracketPairsHorizontal", true, vscode.ConfigurationTarget.Global);
 		//* Python
-		//Rajouter ici le chemin  pour l'extension microbit
-		/*
-		python.autoComplete.extraPaths
-		python.analysis.extraPaths
-		*/
+			//Rajouter ici le chemin  pour l'extension microbit
+			/*
+			python.autoComplete.extraPaths
+			python.analysis.extraPaths
+			*/
 		vscode.workspace.getConfiguration("python.analysis").update("completeFunctionParens", true, vscode.ConfigurationTarget.Global);
 		//* Editor
 		vscode.workspace.getConfiguration("editor.minimap").update("enabled", false, vscode.ConfigurationTarget.Global);

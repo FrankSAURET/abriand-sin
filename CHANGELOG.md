@@ -1,6 +1,8 @@
 # Change Log
 
 ## Released
+##### [0.1.8] - 23 mars 2022
+* Ajout d'une aide pour utiliser PyQtGraph.
 ##### [0.1.6] - 9 janvier 2022
 * Ajout d'un diaporama de présentation.
 * Correction RegEx Power header.
