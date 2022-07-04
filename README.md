@@ -2,7 +2,7 @@
 Collection  d'extension pour travailler en SIN.
 <p align="center">
 <a href="https://marketplace.visualstudio.com/items?itemName=electropol-fr.abriand-sin"><img src="https://badgen.net/vs-marketplace/v/electropol-fr.abriand-sin?icon=visualstudio" alt="vs-marketplace version"></a>
-<a href="https://github.com/FrankSAURET/abriand-sin"><img src="https://badgen.net/github/last-commit/FrankSAURET/abriand-sin?icon=github" alt="lien github"></a>
+<a href="https://github.com/FrankSAURET/abriand-sin"><img src="https://badgen.net/github/last-commit/FrankSAURET/abriand-sin?icon=github" alt="Github last commit"></a>
 <img src="https://badgen.net/vs-marketplace/i/electropol-fr.abriand-sin" alt="vs-marketplace installs">
 <img src="https://badgen.net/vs-marketplace/d/electropol-fr.abriand-sin" alt="vs-marketplace downloads">
 <img src="https://badgen.net/vs-marketplace/rating/electropol-fr.abriand-sin" alt="vs-marketplace rating">

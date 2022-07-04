@@ -1,0 +1,63 @@
+PS F:\Frank\VsCode\Extensions\abriand-sin> vsce publish
+Executing prepublish script 'npm run vscode:prepublish'...
+
+> abriand-sin@0.1.8 vscode:prepublish
+> npm run package
+
+
+> abriand-sin@0.1.8 package
+> webpack --mode production --devtool hidden-source-map
+
+    [webpack-cli] Compiler starting... 
+    [webpack-cli] Compiler is using config: 'F:\Frank\VsCode\Extensions\abriand-sin\webpack.config.js'
+asset extension.js 37 KiB [emitted] [minimized] (name: main) 1 related asset
+modules by path ./node_modules/semver/ 55.8 KiB
+  modules by path ./node_modules/semver/functions/*.js 6.67 KiB 24 modules
+  modules by path ./node_modules/semver/ranges/*.js 14.2 KiB 11 modules
+  modules by path ./node_modules/semver/internal/*.js 7.97 KiB 5 modules
+  modules by path ./node_modules/semver/classes/*.js 25 KiB 3 modules
+  ./node_modules/semver/index.js 1.94 KiB [built] [code generated]
+  ./node_modules/yallist/yallist.js 8.21 KiB [built] [code generated]
+  ./node_modules/yallist/iterator.js 207 bytes [built] [code generated]
+./src/extension.ts 12.9 KiB [built] [code generated]
+external "vscode" 42 bytes [built] [code generated]
+external "fs" 42 bytes [built] [code generated]
+./node_modules/lru-cache/index.js 7.99 KiB [built] [code generated]
+webpack 5.64.4 compiled successfully in 3895 ms
+ INFO  Publishing 'electropol-fr.abriand-sin v0.1.8'...
+ INFO  Extension URL (might take a few minutes): https://marketplace.visualstudio.com/items?itemName=electropol-fr.abriand-sin
+ INFO  Hub URL: https://marketplace.visualstudio.com/manage/publishers/electropol-fr/extensions/abriand-sin/hub
+ DONE  Published electropol-fr.abriand-sin v0.1.8.
+ INFO 
+The latest version of vsce is 2.7.0 and you have 2.6.4.
+Update it now: npm install -g vsce
+PS F:\Frank\VsCode\Extensions\abriand-sin> npm install -g vsce
+
+added 1 package, changed 128 packages, and audited 130 packages in 19s
+
+27 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+PS F:\Frank\VsCode\Extensions\abriand-sin> npm version
+{
+  'abriand-sin': '0.1.8',
+  npm: '8.5.5',
+  node: '17.2.0',
+  v8: '9.6.180.14-node.12',
+  uv: '1.42.0',
+  zlib: '1.2.11',
+  brotli: '1.0.9',
+  ares: '1.18.1',
+  modules: '102',
+  nghttp2: '1.45.1',
+  napi: '8',
+  llhttp: '6.0.4',
+  openssl: '3.0.0+quic',
+  cldr: '40.0',
+  icu: '70.1',
+  tz: '2021a3',
+  unicode: '14.0',
+  ngtcp2: '0.1.0-DEV',
+  nghttp3: '0.1.0-DEV'
+}
