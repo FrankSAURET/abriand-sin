@@ -2,7 +2,7 @@
 	"name": "abriand-sin",
 	"displayName": "ABriand SIN",
 	"description": "Pack d'extension à destination des élèves de TSTI2D SIN du lycée Aristide Briand.",
-	"version": "0.1.8",
+	"version": "0.1.9",
 	"author": {
 		"name": "Frank SAURET",
 		"email": "frank.sauret.prof@gmail.com",
@@ -53,7 +53,8 @@
 		"python",
 		"french",
 		"Qt",
-		"PyQt"
+		"PyQt",
+		"Education"
 	],
 	"categories": [
 		"Extension Packs",
@@ -98,7 +99,8 @@
 		"commands": [
 			{
 				"command": "abriand-sin.configurer",
-				"title": "abriand-sin : Configurer vs code pour le travail en SIN"
+				"category": "ABriand SIN ",
+				"title": "Configurer vs code pour le travail en SIN"
 			}
 		],
 		"walkthroughs": [

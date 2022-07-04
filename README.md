@@ -12,6 +12,7 @@ Collection  d'extension pour travailler en SIN.
 
 ## Description
 * Fournis les outils nécessaires pour développer correctement en **Python**. 
+* Charge les modules nécessaires pour l'année de SIN (turtle, pyqt6, pyserial).
 * Facilite le codage avec :
     * Indentation automatique, 
     * Extrait de code, 

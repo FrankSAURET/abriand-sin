@@ -1,6 +1,8 @@
 # Change Log
 
 ## Released
+##### [0.1.9] - 3 juillet 2022
+* Ajout du téléchargement automatique des modules python.
 ##### [0.1.8] - 23 mars 2022
 * Ajout d'une aide pour utiliser PyQtGraph.
 ##### [0.1.6] - 9 janvier 2022

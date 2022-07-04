@@ -1,6 +1,6 @@
 // The module 'vscode' contains the VS Code extensibility API
 // Import the module and reference it with the alias vscode in your code below
-// Dernière modification : vendredi 11 février 2022, 19:04:03
+// Dernière modification : lundi 4 juillet 2022, 14:34:27
 import * as vscode from 'vscode';
 const semver = require('semver');
 
@@ -16,11 +16,11 @@ export function activate(context: vscode.ExtensionContext) {
 		jamaisLance = true;
 	}
 	//§ Changer ici le numéro de version qui demande une reconfiguration
-	if (semver.gt("0.1.0", numVersionPre)) {
+	if (semver.gt("0.1.9", numVersionPre)) {
 		let daccord = 'Ok';
 		vscode.window.showInformationMessage(`
 			Pour configurer automatiquement l'extension ABriand SIN faites Ok.
-			Sinon vous pourrez le faire aprés exécutant la commande « abriand-sin : configurer » `, { modal: true }, daccord)
+			Sinon vous pourrez le faire aprés en exécutant la commande « ABriand SIN : configurer » `, { modal: true }, daccord)
 			.then(async selection => {
 				if (selection === daccord) {
 					vscode.commands.executeCommand('abriand-sin.configurer');
@@ -31,8 +31,8 @@ export function activate(context: vscode.ExtensionContext) {
 	// The command has been defined in the package.json file
 	// Now provide the implementation of the command with registerCommand
 	// The commandId parameter must match the command field in package.json
-	let disposable = vscode.commands.registerCommand('abriand-sin.configurer', () => {
-		//$ Configuration automatique pour les postes lycée
+	let disposable = vscode.commands.registerCommand('abriand-sin.configurer', async () => {
+		//#region Configuration automatique pour les postes lycée
 		//* Header
 		let nomUtilisateur: string | undefined = "";
 		let adresseMail: string | undefined = "";
@@ -40,15 +40,18 @@ export function activate(context: vscode.ExtensionContext) {
 		if (jamaisLance) {
 			// La variable d'environement "NC" donne le nom suivi de tous les prénoms de l'utilisateur
 			// sur les PC lycée mais n'existe pas forcemment ailleurs.
-			nomUtilisateur = process.env['NC']?.trim()||"";
-			if (nomUtilisateur === "") { nomUtilisateur = process.env['username']?.trim()||""; }
+			nomUtilisateur = process.env['NC']?.trim() || "";
+			if (nomUtilisateur === "") { nomUtilisateur = process.env['username']?.trim() || ""; }
 			try {
-				let prenom = nomUtilisateur?.split(" ", 2)[1].toLowerCase()||"";
-				let nom = nomUtilisateur?.split(" ", 2)[0].toUpperCase()||"";
+				let prenom = nomUtilisateur?.split(" ", 2)[1].toLowerCase() || "";
+				let nom = nomUtilisateur?.split(" ", 2)[0].toUpperCase() || "";
 				prenom = prenom.slice(0, 1).toUpperCase() + prenom.slice(1);
 				nomUtilisateur = prenom + " " + nom;
 			}
-			finally{
+			catch {
+				nomUtilisateur = nomUtilisateur;
+			}
+			finally {
 				adresseMail = nomUtilisateur?.replace(" ", ".").toLowerCase() + ".pro@gmail.com";
 				jamaisLance = false;
 			}
@@ -75,7 +78,7 @@ Dernière modification :
 		let powerHeaderUpdateContent = ["Dernière modification :\\s+([^\"]+)=!date!"];
 		let changerNom = 'Changer le nom ou l\'adresse mail';
 		let laisserNom = 'Laisser comme ça';
-		vscode.window.showInformationMessage(`
+		await vscode.window.showInformationMessage(`
 			Pour les entêtes de fichier,
 			Le nom d'utilisateur est : ${nomUtilisateur}
 			l'adresse mail est : ${adresseMail}`, { modal: true }, changerNom, laisserNom)
@@ -103,22 +106,17 @@ Dernière modification :
 		vscode.workspace.getConfiguration("powerHeader.update").update("enable", "save", vscode.ConfigurationTarget.Global);
 		//* Bracket
 		let aide = 'Comment faire ? ';
-		vscode.window.showInformationMessage('Vous pouvez désormais supprimer l\'extension « Bracket Pair colorizer 2 » qui est maintenant incluse dans VS Code.', aide)
-			.then(selection => {
-				if (selection === aide) {
-					vscode.env.openExternal(vscode.Uri.parse('https://github.com/FrankSAURET/abriand-sin/blob/master/image/SupprimerBracketPairColorizer2.gif?raw=true'));
-				}
-			});
+		// vscode.window.showInformationMessage('Vous pouvez désormais supprimer l\'extension « Bracket Pair colorizer 2 » qui est maintenant incluse dans VS Code.', aide)
+		// 	.then(selection => {
+		// 		if (selection === aide) {
+		// 			vscode.env.openExternal(vscode.Uri.parse('https://github.com/FrankSAURET/abriand-sin/blob/master/image/SupprimerBracketPairColorizer2.gif?raw=true'));
+		// 		}
+		// 	});
 		vscode.workspace.getConfiguration("editor").update("autoClosingBrackets", "always", vscode.ConfigurationTarget.Global);
 		vscode.workspace.getConfiguration("editor.bracketPairColorization").update("enabled", true, vscode.ConfigurationTarget.Global);
 		vscode.workspace.getConfiguration("editor.guides").update("bracketPairs", true, vscode.ConfigurationTarget.Global);
 		vscode.workspace.getConfiguration("editor.guides").update("bracketPairsHorizontal", true, vscode.ConfigurationTarget.Global);
 		//* Python
-			//Rajouter ici le chemin  pour l'extension microbit
-			/*
-			python.autoComplete.extraPaths
-			python.analysis.extraPaths
-			*/
 		vscode.workspace.getConfiguration("python.analysis").update("completeFunctionParens", true, vscode.ConfigurationTarget.Global);
 		//* Editor
 		vscode.workspace.getConfiguration("editor.minimap").update("enabled", false, vscode.ConfigurationTarget.Global);
@@ -135,9 +133,6 @@ Dernière modification :
 		//* Telemetry
 		vscode.workspace.getConfiguration("telemetry").update("telemetryLevel", "off", vscode.ConfigurationTarget.Global);
 		//* Better-comments
-		// let bcTag: string[] = [];
-		// bcTag.map({ backgroundColor: "#fafe0bf7", bold: false, color: "#FF2D00", italic: false, strikethrough: false, tag: "!", underline: false });
-		//let bctag = vscode.workspace.getConfiguration("better-comments").get("tags");
 		let bcTag = [
 			{
 				backgroundColor: "#fafe0bf7",
@@ -237,17 +232,130 @@ Dernière modification :
 				tag: "3-",
 				underline: false,
 			},
+			{
+				backgroundColor: "#eba400",
+				bold: false,
+				color: "#0600c2",
+				italic: true,
+				strikethrough: false,
+				tag: "#region",
+				underline: false,
+			},
+			{
+				backgroundColor: "#eba400",
+				bold: false,
+				color: "#0600c2",
+				italic: true,
+				strikethrough: false,
+				tag: "#endregion",
+				underline: false,
+			}
 		];
 		vscode.workspace.getConfiguration("better-comments").update("tags", bcTag, vscode.ConfigurationTarget.Global);
 		vscode.workspace.getConfiguration("better-comments").update("highlightPlainText", true, vscode.ConfigurationTarget.Global);
-		//$ Fin de la configuration
-		let numVersionActu = vscode.extensions.getExtension("electropol-fr.abriand-sin")?.packageJSON["version"];
-		vscode.workspace.getConfiguration("ABriandSIN").update("VersionNb", numVersionActu, vscode.ConfigurationTarget.Global);
-		console.log('« abriand-sin » est maintenant configuré »');
+		//#endregion
+		//#region Ajout des modules python
+		// compléter la liste des modules à installer ci-dessous
+		const moduleAInstaller: string = "PythonTurtle pyqt6 pyserial";
+		let retourInstallation: string | undefined = "";
+
+		let daccord = 'Ok';
+		await vscode.window.showInformationMessage(`Installation des modules python.
+			Attention cette opération peut-être longue (plusieurs minutes). 
+			Attendez le message de fin (en bas à droite) pour continuer. `, { modal: true }, daccord)
+			.then(async selection => {
+				if (selection === daccord) {
+					await findPipLocation();
+					try {
+						let dir = "";
+						retourInstallation = await installModule(dir, moduleAInstaller);
+					} catch (error) {
+						console.log(error);
+					}
+					finally {
+						let numVersionActu = vscode.extensions.getExtension("electropol-fr.abriand-sin")?.packageJSON["version"];
+						vscode.workspace.getConfiguration("ABriandSIN").update("VersionNb", numVersionActu, vscode.ConfigurationTarget.Global);
+						
+					}
+				}
+			});
+		//#endregion
+		
+		await vscode.window.showInformationMessage(`« abriand-sin » est maintenant configuré.=========> ${retourInstallation}`);
+
 	});
 
 	context.subscriptions.push(disposable);
 }
+async function findPipLocation() {
+	//Vérifie que pip est installé et retourne sa version et son chemin ou génère une erreur
+	const { spawn } = require('child_process');
+	const child = spawn('pip', ['-V']);
 
+	try {
+		let data = "";
+		for await (const chunk of child.stdout) {
+			console.log('stdout: ' + chunk);
+			data += chunk;
+		}
+		let error = "";
+		for await (const chunk of child.stderr) {
+			console.error('stderr: ' + chunk);
+			error += chunk;
+		}
+		const exitCode = await new Promise((resolve, reject) => {
+			child.on('close', resolve);
+			let path = "";
+			path = data.substring(
+				data.lastIndexOf(":") - 1,
+				data.lastIndexOf("pip")
+			);
+			console.log("Python third-party dir: " + path);
+			vscode.workspace.getConfiguration("python").update("thirdPartyModulesDirectory", path, vscode.ConfigurationTarget.Global);
+		});
+		if (exitCode) {
+			throw new Error(`subprocess error exit ${exitCode}, ${error}`);
+		}
+		return data;
+	} catch (error) {
+		console.log(error);
+	}
+}
+async function installModule(target: string, module: string) {
+	// Installe un module avec pip et retourne le message post installation
+	const { spawn } = require('child_process');
+	const args = "pip install " + target + " " + module;
+	const child = spawn("powershell.exe", [args]);
+
+	try {
+		let data: string = "";
+		for await (const chunk of child.stdout) {
+			console.log('stdout: ' + chunk);
+			//data += chunk;
+			let nomModules=module.replace(/ /g,", ");
+			data = `${nomModules} ont été installés`;
+			//console.log(`Module ${module} succesfully installed,${module}`);
+		}
+		let error = "";
+		for await (const chunk of child.stderr) {
+			console.error('stderr: ' + chunk);
+			error += chunk;
+			data = `Erreur d'installation des modules : ${module}`;
+			vscode.window.showErrorMessage(error);
+		}
+		const exitCode = await new Promise((resolve, reject) => {
+			child.on('close', resolve);
+		});
+		if (exitCode) {
+			throw new Error(`subprocess error exit ${exitCode}, ${error}`);
+		}
+		return data;
+	} catch (error) {
+		console.log(error);
+	}
+}
+async function afficheMessagePatientez() {
+
+}
 // this method is called when your extension is deactivated
 export function deactivate() { }
