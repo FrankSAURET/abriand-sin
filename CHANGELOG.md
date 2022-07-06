@@ -1,6 +1,8 @@
 # Change Log
 
 ## Released
+##### [0.2.0] -  2022
+* Corrections mineures
 ##### [0.1.9] - 3 juillet 2022
 * Ajout du téléchargement automatique des modules python.
 ##### [0.1.8] - 23 mars 2022

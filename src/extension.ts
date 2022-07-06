@@ -1,6 +1,6 @@
 // The module 'vscode' contains the VS Code extensibility API
 // Import the module and reference it with the alias vscode in your code below
-// Dernière modification : lundi 4 juillet 2022, 14:34:27
+// Dernière modification : mercredi 6 juillet 2022, 16:59:50
 import * as vscode from 'vscode';
 const semver = require('semver');
 
@@ -265,8 +265,8 @@ Dernière modification :
 			Attendez le message de fin (en bas à droite) pour continuer. `, { modal: true }, daccord)
 			.then(async selection => {
 				if (selection === daccord) {
-					await findPipLocation();
 					try {
+						await findPipLocation();
 						let dir = "";
 						retourInstallation = await installModule(dir, moduleAInstaller);
 					} catch (error) {
@@ -281,7 +281,7 @@ Dernière modification :
 			});
 		//#endregion
 		
-		await vscode.window.showInformationMessage(`« abriand-sin » est maintenant configuré.=========> ${retourInstallation}`);
+		await vscode.window.showInformationMessage(`« abriand-sin » est maintenant configuré. ${retourInstallation}`);
 
 	});
 
@@ -323,31 +323,33 @@ async function findPipLocation() {
 }
 async function installModule(target: string, module: string) {
 	// Installe un module avec pip et retourne le message post installation
+	module = module.trim();
 	const { spawn } = require('child_process');
 	const args = "pip install " + target + " " + module;
 	const child = spawn("powershell.exe", [args]);
+	let nomModules = module.replace(/\s/g, ", ");//remplace les espaces par des virgules
+	nomModules = nomModules.replace(/\,(?=[^,]*$)/, " et");//remplace la dernière virgule par « et»
 
 	try {
 		let data: string = "";
 		for await (const chunk of child.stdout) {
 			console.log('stdout: ' + chunk);
 			//data += chunk;
-			let nomModules=module.replace(/ /g,", ");
-			data = `${nomModules} ont été installés`;
+			data = `Les modules Python ; ${nomModules} ; ont été installés.`;
 			//console.log(`Module ${module} succesfully installed,${module}`);
 		}
 		let error = "";
 		for await (const chunk of child.stderr) {
 			console.error('stderr: ' + chunk);
 			error += chunk;
-			data = `Erreur d'installation des modules : ${module}`;
+			data = `Erreur lors de l'installation d'au moins un des modules : ${nomModules}.`;
 			vscode.window.showErrorMessage(error);
 		}
 		const exitCode = await new Promise((resolve, reject) => {
 			child.on('close', resolve);
 		});
 		if (exitCode) {
-			throw new Error(`subprocess error exit ${exitCode}, ${error}`);
+			throw new Error(`Erreur : ${exitCode}, ${error}`);
 		}
 		return data;
 	} catch (error) {
