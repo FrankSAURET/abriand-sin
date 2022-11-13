@@ -2,7 +2,7 @@
 	"name": "abriand-sin",
 	"displayName": "ABriand SIN",
 	"description": "Pack d'extension à destination des élèves de TSTI2D SIN du lycée Aristide Briand.",
-	"version": "0.2.0",
+	"version": "0.2.1",
 	"author": {
 		"name": "Frank SAURET",
 		"email": "frank.sauret.prof@gmail.com",
@@ -54,6 +54,10 @@
 		"french",
 		"Qt",
 		"PyQt",
+		"html",	
+		"css",
+		"SIN",
+		"Arduino",
 		"Education"
 	],
 	"categories": [
@@ -63,15 +67,20 @@
 	],
 	"extensionPack": [
 		"aaron-bond.better-comments",
+		"christian-kohler.path-intellisense",
 		"dongli.python-preview",
+		"ecmel.vscode-html-css",
 		"KevinRose.vsc-python-indent",
 		"ms-python.python",
 		"ms-python.vscode-pylance",
-		"VisualStudioExptTeam.vscodeintellicode",
-		"zhoufeng.pyqt-integration",
 		"njpwerner.autodocstring",
+		"VisualStudioExptTeam.vscodeintellicode",
+		"ms-vscode.live-server",
+		"zhoufeng.pyqt-integration",
 		"epivision.vscode-file-header",
-		"MS-vsliveshare.vsliveshare"
+		"MS-vsliveshare.vsliveshare",
+		"vsciot-vscode.vscode-arduino",
+		"ronaldosena.arduino-snippets"
 	],
 	"activationEvents": [
 		"onStartupFinished"
@@ -107,7 +116,7 @@
 			{
 				"id": "ABriandSIN",
 				"title": "Bien commencer en SIN avec Visual Studio.",
-				"description": "Les bases de la programmation.",
+				"description": "Utiliser VSCode pour le python et Arduino.",
 				"steps": [
 					{
 						"id": "configurer",
@@ -143,8 +152,15 @@
 						"media": {
 							"markdown": "Utiliser PyQtGraph.md"
 						}
+					},
+					{
+						"id": "Arduino",
+						"title": "Programmer la carte arduino.",
+						"description": "",
+						"media": {
+							"markdown": "arduino.md"
+						}
 					}
-
 				]
 			}
 		]

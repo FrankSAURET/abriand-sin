@@ -12,7 +12,10 @@ Collection  d'extension pour travailler en SIN.
 
 ## Description
 * Fournis les outils nécessaires pour développer correctement en **Python**. 
+* Fournis les outils pour programmer en **html** et **css**.
+* Fournis les outils pour programmer les arduino en **cpp**.
 * Charge les modules nécessaires pour l'année de SIN (turtle, pyqt6, pyserial).
+* Ajoute les outils arduino,
 * Facilite le codage avec :
     * Indentation automatique, 
     * Extrait de code, 
@@ -29,14 +32,23 @@ Collection  d'extension pour travailler en SIN.
 * **QtSlid** ou Slid  : Ajoute le slot automatique pour un slider.
 
 ## Extensions dans ce pack
+### Mise en forme
 * [Better Comments](https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments) - Améliorez vos commentaires de code en annotant avec des alertes, des informations, des tâches à faire et plus encore !
+* [Power Header](https://marketplace.visualstudio.com/items?itemName=epivision.vscode-file-header) - Ajout d'en-tête automatique avec ctrl+alt+h
+### Python
 * [PYQT Integration](https://marketplace.visualstudio.com/items?itemName=zhoufeng.pyqt-integration)
 * [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python) - IntelliSense (Pylance), Linting, Débogage (multithread, à distance), Jupyter Notebooks, formatage de code, refactorisation, tests unitaires, etc.
 * [Python Preview](https://marketplace.visualstudio.com/items?itemName=dongli.python-preview) - Fournir un aperçu de l'exécution de Python.
-* [Visual Studio IntelliCode](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode) - Développement assisté par IA
 * [Pylance](https://marketplace.visualstudio.com/items?itemName=ms-python.vscode-pylance) - Un serveur de langage performant et riche en fonctionnalités pour Python dans VS Code
 * [Python Indent](https://marketplace.visualstudio.com/items?itemName=KevinRose.vsc-python-indent) - Corriger l'indentation Python.
 * [Python Docstring Generator](https://marketplace.visualstudio.com/items?itemName=njpwerner.autodocstring) - Génération rapide de docstring avec """
-* [Power Header](https://marketplace.visualstudio.com/items?itemName=epivision.vscode-file-header) - Ajout d'en-tête automatique avec ctrl+alt+h
+### Aide au codage
+* [Visual Studio IntelliCode](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode) - Développement assisté par IA
 * [Live Share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare) - Collaboration en ligne.
+### Arduino
+* [Arduino](https://marketplace.visualstudio.com/items?itemName=vsciot-vscode.vscode-arduino) - Les outils microsoft pour programmer les arduinos.
+* [arduino-snippets](https://marketplace.visualstudio.com/items?itemName=ronaldosena.arduino-snippets) - Une collection de snippets arduino.
+### Web
+* [HTML CSS Support](https://marketplace.visualstudio.com/items?itemName=ecmel.vscode-html-css) - Visual Studio Code CSS Intellisense pour HTML
+* [Live Preview](https://marketplace.visualstudio.com/items?itemName=ms-vscode.live-server) - Prévisualiser les fichiers HTML dans un serveur local tout en les éditant dans VSCode
 

@@ -1,8 +1,12 @@
 # Change Log
 
 ## Released
-##### [0.2.0] -  2022
-* Corrections mineures
+##### [0.2.1] - 15 novembre 2022
+* Ajout de la prise en charge html et css ainsi que du serveur live preview.
+##### [0.2.0] - 05 septembre 2022
+* Version alpha prête pour 2022-2023.
+* Corrections mineures.
+* Ajout d'outils pour arduino.
 ##### [0.1.9] - 3 juillet 2022
 * Ajout du téléchargement automatique des modules python.
 ##### [0.1.8] - 23 mars 2022
