@@ -1,6 +1,8 @@
 # Change Log
 
 ## Released
+##### [0.2.2] - 05 décembre 2022
+* Ajout de urllib3.
 ##### [0.2.1] - 15 novembre 2022
 * Ajout de la prise en charge html et css ainsi que du serveur live preview.
 ##### [0.2.0] - 05 septembre 2022

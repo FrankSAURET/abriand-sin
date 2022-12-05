@@ -1,6 +1,6 @@
 // The module 'vscode' contains the VS Code extensibility API
 // Import the module and reference it with the alias vscode in your code below
-// Dernière modification : mercredi 6 juillet 2022, 16:59:50
+// Dernière modification : lundi 5 décembre 2022, 14:37:47
 import * as vscode from 'vscode';
 const semver = require('semver');
 
@@ -256,7 +256,7 @@ Dernière modification :
 		//#endregion
 		//#region Ajout des modules python
 		// compléter la liste des modules à installer ci-dessous
-		const moduleAInstaller: string = "PythonTurtle pyqt6 pyserial";
+		const moduleAInstaller: string = "PythonTurtle pyqt6 pyserial urllib3";
 		let retourInstallation: string | undefined = "";
 
 		let daccord = 'Ok';
