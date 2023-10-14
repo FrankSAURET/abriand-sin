@@ -2,7 +2,7 @@
 	"name": "abriand-sin",
 	"displayName": "ABriand SIN",
 	"description": "Pack d'extension à destination des élèves de TSTI2D SIN du lycée Aristide Briand.",
-	"version": "0.2.2",
+	"version": "0.2.3",
 	"author": {
 		"name": "Frank SAURET",
 		"email": "frank.sauret.prof@gmail.com",
@@ -61,14 +61,13 @@
 		"Education"
 	],
 	"categories": [
+		"Education",
 		"Extension Packs",
-		"Snippets",
-		"Education"
+		"Snippets"
 	],
 	"extensionPack": [
 		"aaron-bond.better-comments",
 		"christian-kohler.path-intellisense",
-		"dongli.python-preview",
 		"ecmel.vscode-html-css",
 		"KevinRose.vsc-python-indent",
 		"ms-python.python",
@@ -80,7 +79,8 @@
 		"epivision.vscode-file-header",
 		"MS-vsliveshare.vsliveshare",
 		"vsciot-vscode.vscode-arduino",
-		"ronaldosena.arduino-snippets"
+		"ronaldosena.arduino-snippets",
+		"alexnesnes.teleplot"
 	],
 	"activationEvents": [
 		"onStartupFinished"
@@ -123,7 +123,7 @@
 						"title": "Configurer ABriand-SIN",
 						"description": "Réalise la configuration automatique de l'extension.\n[Lancer la configuration](command:abriand-sin.configurer)",
 						"media": {
-							"markdown": "configure.md"
+							"markdown": "./walkthroughs/configure.md"
 						},
 						"completionEvents": [
 							"oncommand:abriand-sin.configurer"
@@ -134,7 +134,7 @@
 						"title": "Utiliser better comment.",
 						"description": "",
 						"media": {
-							"markdown": "bettercomment.md"
+							"markdown": "./walkthroughs/bettercomment.md"
 						}
 					},
 					{
@@ -142,7 +142,7 @@
 						"title": "Utiliser les fragments de code.",
 						"description": "",
 						"media": {
-							"markdown": "snippet.md"
+							"markdown": "./walkthroughs/snippet.md"
 						}
 					},
 					{
@@ -150,7 +150,7 @@
 						"title": "Utiliser PyQtGraph avec QtDesigner.",
 						"description": "",
 						"media": {
-							"markdown": "Utiliser PyQtGraph.md"
+							"markdown": "./walkthroughs/Utiliser PyQtGraph.md"
 						}
 					},
 					{
@@ -158,7 +158,7 @@
 						"title": "Programmer la carte arduino.",
 						"description": "",
 						"media": {
-							"markdown": "arduino.md"
+							"markdown": "./walkthroughs/arduino.md"
 						}
 					}
 				]

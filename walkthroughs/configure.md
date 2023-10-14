@@ -10,12 +10,12 @@ Auteur: Frank SAURET(frank.sauret.prof@gmail.com)
 configure.md(Ɔ) 2022
 Description : Tuto de configuration de l'extension
 Créé le :  vendredi 7 janvier 2022, 17:28:20 
-Dernière modification : samedi 8 janvier 2022, 18:09:02
+Dernière modification : jeudi 3 août 2023 à 19:02:08
 -->
 # Configuration de l'extension.
 La configuration se lance automatiquement. Elle devrait trouver toute seule votre nom, votre prénom et votre adresse mail mais elle vous proposera de les garder ou de les changer dans la barre de commande.
 
-![Configuration](image/configurer.gif)
+![Configuration](../image/configurer.gif)
 
 Vous pouvez la relancer avec la commande **F1** puis « **abriand-sin : configurer** ». 
 

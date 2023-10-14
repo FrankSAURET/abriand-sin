@@ -19,17 +19,17 @@
 - Créer une fenêtre comme d'habitude.
 - Insérer dedans un Widget vide.
 
-![Insertion widget](image\PyQtGraph1.png)
+![Insertion widget](../image/PyQtGraph1.png)
 - Donnez un nom au widget, « graphWidget » fera l'affaire. C'est juste pour référencer l'élément dans le code.
 
-![Insertion widget](image\PyQtGraph2.png)
+![Insertion widget](../image/PyQtGraph2.png)
 - Faites un clic droit sur le widget et sélectionnez Promouvoir en dans le menu contextuel du widget.
 
-![Insertion widget](image\PyQtGraph3.png)
+![Insertion widget](../image/PyQtGraph3.png)
 - Une boîte de dialogue apparait pour spécifier la classe de widget personnalisée que le widget d'espace réservé deviendra.
 Faites la promotion du widget en spécifiant le nom de la classe en tant que PlotWidget et le fichier d'en-tête en tant que pyqtgraph.
 
-![Insertion widget](image\PyQtGraph4.png)
+![Insertion widget](../image/PyQtGraph4.png)
 - Cliquez sur ajouter puis promouvoir.
 
 Voilà le graphe est en placez il reste à l'utiliser.

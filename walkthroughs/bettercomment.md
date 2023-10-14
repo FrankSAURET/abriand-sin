@@ -10,12 +10,12 @@ Auteur: Frank SAURET(frank.sauret.prof@gmail.com)
 bettercomment.md(Ɔ) 2022
 Description : Utilisation de better-comments
 Créé le :  vendredi 7 janvier 2022, 17:29:01 
-Dernière modification : vendredi 7 janvier 2022, 17:44:24
+Dernière modification : jeudi 3 août 2023 à 19:02:09
 -->
 # Better comments.
 Better-comments permet de rajouter automatiquement des couleurs dans vos commentaires en tapant seulement un ou 2 caractères au début d’une ligne de commentaire.
 
-![Code annoté](image/better-comments.png)
+![Code annoté](../image/better-comments.png)
 
 Dans cet exemple, mettre **!** au début de la ligne, passe la ligne en rouge sur fond jaune.
 

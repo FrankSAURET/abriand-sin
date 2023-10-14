@@ -10,7 +10,7 @@ Auteur: Frank SAURET(frank.sauret.prof@gmail.com)
 snippet.md(Ɔ) 2022
 Description : Insérer des snippet
 Créé le :  samedi 8 janvier 2022, 16:12:50 
-Dernière modification : samedi 8 janvier 2022, 18:11:44
+Dernière modification : jeudi 3 août 2023 à 19:02:07
 -->
 
 # Snippet.
@@ -18,7 +18,7 @@ Les snippets sont des fragments de code déjà saisis pour vous. Dans ils peuven
 
 La touche « Tab » permet de valider la saisie et de passer au champ suivant.
 
-![Insertion Snippet](image/Snippet.gif)
+![Insertion Snippet](../image/Snippet.gif)
 
 ## Les snippets pour PyQt que j'ai ajouté sont les suivants :
 * **QtForm** ou Form : Ajoute le code permettant de lier un formulaire dessiné dans Qt Designer.

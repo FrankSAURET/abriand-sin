@@ -1,6 +1,10 @@
 # Change Log
 
 ## Released
+##### [0.2.3] -  2023
+* Ajout de TelePlot.
+* Suppression de python preview qui n'est plus maintenu.
+* Suppression de Html preview qui n'est plus maintenu.
 ##### [0.2.2] - 05 décembre 2022
 * Ajout de urllib3.
 ##### [0.2.1] - 15 novembre 2022
@@ -8,7 +12,7 @@
 ##### [0.2.0] - 05 septembre 2022
 * Version alpha prête pour 2022-2023.
 * Corrections mineures.
-* Ajout d'outils pour arduino.
+* Ajout d'outils pour Arduino.
 ##### [0.1.9] - 3 juillet 2022
 * Ajout du téléchargement automatique des modules python.
 ##### [0.1.8] - 23 mars 2022
