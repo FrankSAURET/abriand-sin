@@ -1,7 +1,10 @@
 # Change Log
 
 ## Released
-##### [0.2.3] -  2023
+##### [0.3.0] -  2023
+* Version alpha prête pour 2023-2024.
+* Ajout de Colored Thèmes.
+##### [0.2.3] -  14 octobre 2023
 * Ajout de TelePlot.
 * Suppression de python preview qui n'est plus maintenu.
 * Suppression de Html preview qui n'est plus maintenu.

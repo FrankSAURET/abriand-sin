@@ -2,7 +2,7 @@
 	"name": "abriand-sin",
 	"displayName": "ABriand SIN",
 	"description": "Pack d'extension à destination des élèves de TSTI2D SIN du lycée Aristide Briand.",
-	"version": "0.2.3",
+	"version": "0.3.0",
 	"author": {
 		"name": "Frank SAURET",
 		"email": "frank.sauret.prof@gmail.com",
@@ -80,7 +80,8 @@
 		"MS-vsliveshare.vsliveshare",
 		"vsciot-vscode.vscode-arduino",
 		"ronaldosena.arduino-snippets",
-		"alexnesnes.teleplot"
+		"alexnesnes.teleplot",
+		"electropol-fr.coloredtheme"
 	],
 	"activationEvents": [
 		"onStartupFinished"
@@ -110,7 +111,12 @@
 				"command": "abriand-sin.configurer",
 				"category": "ABriand SIN ",
 				"title": "Configurer vs code pour le travail en SIN"
+			},
+			{
+				"command": "extension.showProgress",
+				"title": "Progression de l'installation des modules Python."
 			}
+
 		],
 		"walkthroughs": [
 			{
