@@ -1,7 +1,9 @@
 # Change Log
 
 ## Released
-##### [0.3.0] -  2023
+##### [0.3.1] - 18 janvier 2024
+* Ajout de la bibliothèque requests pour le python.
+##### [0.3.0] - 7 novembre 2023
 * Version alpha prête pour 2023-2024.
 * Ajout de Colored Thèmes.
 ##### [0.2.3] -  14 octobre 2023
