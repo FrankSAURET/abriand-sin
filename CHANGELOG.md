@@ -1,7 +1,11 @@
 # Change Log
 
 ## Released
-##### [0.3.0] -  2023
+##### [0.4.0] -  28 août 2024
+* Version alpha prête pour 2024-2025.
+* Suppression de l'extension Arduino abandonnée par Microsoft. Suppression de arduino snippet et teleplot qui allaient avec.
+* Ajout de Algorithme Français.
+##### [0.3.0] -  20 août 2023
 * Version alpha prête pour 2023-2024.
 * Ajout de Colored Thèmes.
 ##### [0.2.3] -  14 octobre 2023

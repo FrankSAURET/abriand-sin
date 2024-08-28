@@ -13,10 +13,8 @@ Collection  d'extension pour travailler en SIN.
 ## Description
 * Fournis les outils nécessaires pour développer correctement en **Python**. 
 * Fournis les outils pour programmer en **html** et **css**.
-* Fournis les outils pour programmer les **Arduino** en **cpp**.
+* Fournis une extension (Algorithme Français) pour créer des algorithmes en français.
 * Charge les modules Python nécessaires pour l'année de SIN (turtle, pyqt6, pyserial).
-* Ajoute les outils Arduino,
-* Ajoute l'outil TelePlot pour tracer des courbes à partir d'un port série.
 * Facilite le codage avec :
     * Indentation automatique, 
     * Extrait de code, 
@@ -31,7 +29,7 @@ Collection  d'extension pour travailler en SIN.
 * **QtBout** ou Bout : Ajoute le slot automatique pour un bouton.
 * **QtSlid** ou Slid  : Ajoute le slot automatique pour un slider.
 
-## Extensions dans ce pack
+## Extensions dans ce pack (section  non maintenue)
 ### Mise en forme
 * [Better Comments](https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments) - Améliorez vos commentaires de code en annotant avec des alertes, des informations, des tâches à faire et plus encore !
 * [Power Header](https://marketplace.visualstudio.com/items?itemName=epivision.vscode-file-header) - Ajout d'en-tête automatique avec ctrl+alt+h
@@ -44,10 +42,6 @@ Collection  d'extension pour travailler en SIN.
 ### Aide au codage
 * [Visual Studio IntelliCode](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode) - Développement assisté par IA
 * [Live Share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare) - Collaboration en ligne.
-### Arduino
-* [Arduino](https://marketplace.visualstudio.com/items?itemName=vsciot-vscode.vscode-arduino) - Les outils microsoft pour programmer les arduinos.
-* [arduino-snippets](https://marketplace.visualstudio.com/items?itemName=ronaldosena.arduino-snippets) - Une collection de snippets arduino.
-* [teleplot](https://marketplace.visualstudio.com/items?itemName=alexnesnes.teleplot) - Trace des courbes à partir du port série ou de packets UDP.
 ### Web
 * [HTML CSS Support](https://marketplace.visualstudio.com/items?itemName=ecmel.vscode-html-css) - Visual Studio Code CSS Intellisense pour HTML
 * [Live Preview](https://marketplace.visualstudio.com/items?itemName=ms-vscode.live-server) - Prévisualiser les fichiers HTML dans un serveur local tout en les éditant dans VSCode

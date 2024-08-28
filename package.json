@@ -2,7 +2,7 @@
 	"name": "abriand-sin",
 	"displayName": "ABriand SIN",
 	"description": "Pack d'extension à destination des élèves de TSTI2D SIN du lycée Aristide Briand.",
-	"version": "0.3.0",
+	"version": "0.4.0",
 	"author": {
 		"name": "Frank SAURET",
 		"email": "frank.sauret.prof@gmail.com",
@@ -78,10 +78,8 @@
 		"zhoufeng.pyqt-integration",
 		"epivision.vscode-file-header",
 		"MS-vsliveshare.vsliveshare",
-		"vsciot-vscode.vscode-arduino",
-		"ronaldosena.arduino-snippets",
-		"alexnesnes.teleplot",
-		"electropol-fr.coloredtheme"
+		"electropol-fr.coloredtheme",
+		"edigrp.pseudo-code-french"
 	],
 	"activationEvents": [
 		"onStartupFinished"
