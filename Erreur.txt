@@ -1,0 +1,699 @@
+  ERROR: Command errored out with exit status 1:
+   command: 'c:\python38\python.exe' 'c:\python38\lib\site-packages\pip' install --ignore-installed --no-user --prefix 'C:\Users\sauret\AppData\Local\Temp\pip-build-env-dfsn8d65\overlay' --no-warn-script-location --no-binary :none: --only-binary :none: -i https://pypi.org/simple -- 'sip >=6.5, <7' 'PyQt-builder >=1.15, <2'
+       cwd: None
+  Complete output (165 lines):
+  Collecting sip<7,>=6.5
+    Downloading https://files.pythonhosted.org/packages/a6/4e/c34eee70109e9a8110672f074fc18b5022bf4b9b4c92641245c73ae0b21a/sip-6.7.12.tar.gz (1.2MB)
+    Installing build dependencies: started
+    Installing build dependencies: finished with status 'done'
+    Getting requirements to build wheel: started
+    Getting requirements to build wheel: finished with status 'done'
+      Preparing wheel metadata: started
+      Preparing wheel metadata: finished with status 'done'
+  Collecting PyQt-builder<2,>=1.15
+    Downloading https://files.pythonhosted.org/packages/6b/31/89d6cd9d6ddc7fe160d6834d498c69fc92b9e70771e280a59cc8a085d5a2/PyQt_builder-1.15.3-py3-none-any.whl (3.7MB)
+  Collecting setuptools (from sip<7,>=6.5)
+    Using cached https://files.pythonhosted.org/packages/bb/26/7945080113158354380a12ce26873dd6c1ebd88d47f5bc24e2c5bb38c16a/setuptools-68.2.2-py3-none-any.whl
+  Collecting ply (from sip<7,>=6.5)
+    Using cached https://files.pythonhosted.org/packages/a3/58/35da89ee790598a0700ea49b2a66594140f44dec458c07e8e3d4979137fc/ply-3.11-py2.py3-none-any.whl
+  Collecting tomli; python_version < "3.11" (from sip<7,>=6.5)
+    Using cached https://files.pythonhosted.org/packages/97/75/10a9ebee3fd790d20926a90a2547f0bf78f371b2f13aa822c759680ca7b9/tomli-2.0.1-py3-none-any.whl
+  Collecting packaging (from sip<7,>=6.5)
+    Using cached https://files.pythonhosted.org/packages/ec/1a/610693ac4ee14fcdf2d9bf3c493370e4f2ef7ae2e19217d7a237ff42367d/packaging-23.2-py3-none-any.whl
+  Building wheels for collected packages: sip
+    Building wheel for sip (PEP 517): started
+    Building wheel for sip (PEP 517): finished with status 'error'
+    ERROR: Command errored out with exit status 1:
+     command: 'c:\python38\python.exe' 'c:\python38\lib\site-packages\pip\_vendor\pep517\_in_process.py' build_wheel 'C:\Users\sauret\AppData\Local\Temp\tmpph5ca95p'
+         cwd: C:\Users\sauret\AppData\Local\Temp\pip-install-pv8jpcpi\sip
+    Complete output (133 lines):
+    running bdist_wheel
+    running build
+    running build_py
+    creating build
+    creating build\lib.win32-cpython-38
+    creating build\lib.win32-cpython-38\sipbuild
+    copying sipbuild\abstract_builder.py -> build\lib.win32-cpython-38\sipbuild
+    copying sipbuild\abstract_project.py -> build\lib.win32-cpython-38\sipbuild
+    copying sipbuild\api.py -> build\lib.win32-cpython-38\sipbuild
+    copying sipbuild\argument_parser.py -> build\lib.win32-cpython-38\sipbuild
+    copying sipbuild\bindings.py -> build\lib.win32-cpython-38\sipbuild
+    copying sipbuild\bindings_configuration.py -> build\lib.win32-cpython-38\sipbuild
+    copying sipbuild\buildable.py -> build\lib.win32-cpython-38\sipbuild
+    copying sipbuild\builder.py -> build\lib.win32-cpython-38\sipbuild
+    copying sipbuild\configurable.py -> build\lib.win32-cpython-38\sipbuild
+    copying sipbuild\distutils_builder.py -> build\lib.win32-cpython-38\sipbuild
+    copying sipbuild\exceptions.py -> build\lib.win32-cpython-38\sipbuild
+    copying sipbuild\installable.py -> build\lib.win32-cpython-38\sipbuild
+    copying sipbuild\project.py -> build\lib.win32-cpython-38\sipbuild
+    copying sipbuild\pyproject.py -> build\lib.win32-cpython-38\sipbuild
+    copying sipbuild\py_versions.py -> build\lib.win32-cpython-38\sipbuild
+    copying sipbuild\setuptools_builder.py -> build\lib.win32-cpython-38\sipbuild
+    copying sipbuild\toml.py -> build\lib.win32-cpython-38\sipbuild
+    copying sipbuild\version.py -> build\lib.win32-cpython-38\sipbuild
+    copying sipbuild\__init__.py -> build\lib.win32-cpython-38\sipbuild
+    creating build\lib.win32-cpython-38\sipbuild\distinfo
+    copying sipbuild\distinfo\distinfo.py -> build\lib.win32-cpython-38\sipbuild\distinfo
+    copying sipbuild\distinfo\main.py -> build\lib.win32-cpython-38\sipbuild\distinfo
+    copying sipbuild\distinfo\__init__.py -> build\lib.win32-cpython-38\sipbuild\distinfo
+    creating build\lib.win32-cpython-38\sipbuild\generator
+    copying sipbuild\generator\error_log.py -> build\lib.win32-cpython-38\sipbuild\generator
+    copying sipbuild\generator\instantiations.py -> build\lib.win32-cpython-38\sipbuild\generator
+    copying sipbuild\generator\python_slots.py -> build\lib.win32-cpython-38\sipbuild\generator
+    copying sipbuild\generator\scoped_name.py -> build\lib.win32-cpython-38\sipbuild\generator
+    copying sipbuild\generator\specification.py -> build\lib.win32-cpython-38\sipbuild\generator
+    copying sipbuild\generator\templates.py -> build\lib.win32-cpython-38\sipbuild\generator
+    copying sipbuild\generator\utils.py -> build\lib.win32-cpython-38\sipbuild\generator
+    copying sipbuild\generator\__init__.py -> build\lib.win32-cpython-38\sipbuild\generator
+    creating build\lib.win32-cpython-38\sipbuild\module
+    copying sipbuild\module\abi_version.py -> build\lib.win32-cpython-38\sipbuild\module
+    copying sipbuild\module\main.py -> build\lib.win32-cpython-38\sipbuild\module
+    copying sipbuild\module\module.py -> build\lib.win32-cpython-38\sipbuild\module
+    copying sipbuild\module\__init__.py -> build\lib.win32-cpython-38\sipbuild\module
+    creating build\lib.win32-cpython-38\sipbuild\tools
+    copying sipbuild\tools\build.py -> build\lib.win32-cpython-38\sipbuild\tools
+    copying sipbuild\tools\install.py -> build\lib.win32-cpython-38\sipbuild\tools
+    copying sipbuild\tools\sdist.py -> build\lib.win32-cpython-38\sipbuild\tools
+    copying sipbuild\tools\wheel.py -> build\lib.win32-cpython-38\sipbuild\tools
+    copying sipbuild\tools\__init__.py -> build\lib.win32-cpython-38\sipbuild\tools
+    creating build\lib.win32-cpython-38\sipbuild\generator\outputs
+    copying sipbuild\generator\outputs\api.py -> build\lib.win32-cpython-38\sipbuild\generator\outputs
+    copying sipbuild\generator\outputs\extracts.py -> build\lib.win32-cpython-38\sipbuild\generator\outputs
+    copying sipbuild\generator\outputs\pyi.py -> build\lib.win32-cpython-38\sipbuild\generator\outputs
+    copying sipbuild\generator\outputs\type_hints.py -> build\lib.win32-cpython-38\sipbuild\generator\outputs
+    copying sipbuild\generator\outputs\xml.py -> build\lib.win32-cpython-38\sipbuild\generator\outputs
+    copying sipbuild\generator\outputs\__init__.py -> build\lib.win32-cpython-38\sipbuild\generator\outputs
+    creating build\lib.win32-cpython-38\sipbuild\generator\parser
+    copying sipbuild\generator\parser\annotations.py -> build\lib.win32-cpython-38\sipbuild\generator\parser
+    copying sipbuild\generator\parser\parser.py -> build\lib.win32-cpython-38\sipbuild\generator\parser
+    copying sipbuild\generator\parser\parser_manager.py -> build\lib.win32-cpython-38\sipbuild\generator\parser
+    copying sipbuild\generator\parser\parsetab.py -> build\lib.win32-cpython-38\sipbuild\generator\parser
+    copying sipbuild\generator\parser\python_exceptions.py -> build\lib.win32-cpython-38\sipbuild\generator\parser
+    copying sipbuild\generator\parser\rules.py -> build\lib.win32-cpython-38\sipbuild\generator\parser
+    copying sipbuild\generator\parser\tokens.py -> build\lib.win32-cpython-38\sipbuild\generator\parser
+    copying sipbuild\generator\parser\__init__.py -> build\lib.win32-cpython-38\sipbuild\generator\parser
+    creating build\lib.win32-cpython-38\sipbuild\generator\resolver
+    copying sipbuild\generator\resolver\resolver.py -> build\lib.win32-cpython-38\sipbuild\generator\resolver
+    copying sipbuild\generator\resolver\__init__.py -> build\lib.win32-cpython-38\sipbuild\generator\resolver
+    creating build\lib.win32-cpython-38\sipbuild\generator\outputs\formatters
+    copying sipbuild\generator\outputs\formatters\argument.py -> build\lib.win32-cpython-38\sipbuild\generator\outputs\formatters
+    copying sipbuild\generator\outputs\formatters\base_formatter.py -> build\lib.win32-cpython-38\sipbuild\generator\outputs\formatters
+    copying sipbuild\generator\outputs\formatters\enum.py -> build\lib.win32-cpython-38\sipbuild\generator\outputs\formatters
+    copying sipbuild\generator\outputs\formatters\klass.py -> build\lib.win32-cpython-38\sipbuild\generator\outputs\formatters
+    copying sipbuild\generator\outputs\formatters\overload.py -> build\lib.win32-cpython-38\sipbuild\generator\outputs\formatters
+    copying sipbuild\generator\outputs\formatters\scoped.py -> build\lib.win32-cpython-38\sipbuild\generator\outputs\formatters
+    copying sipbuild\generator\outputs\formatters\signature.py -> build\lib.win32-cpython-38\sipbuild\generator\outputs\formatters
+    copying sipbuild\generator\outputs\formatters\template.py -> build\lib.win32-cpython-38\sipbuild\generator\outputs\formatters
+    copying sipbuild\generator\outputs\formatters\utils.py -> build\lib.win32-cpython-38\sipbuild\generator\outputs\formatters
+    copying sipbuild\generator\outputs\formatters\value_list.py -> build\lib.win32-cpython-38\sipbuild\generator\outputs\formatters
+    copying sipbuild\generator\outputs\formatters\variable.py -> build\lib.win32-cpython-38\sipbuild\generator\outputs\formatters
+    copying sipbuild\generator\outputs\formatters\__init__.py -> build\lib.win32-cpython-38\sipbuild\generator\outputs\formatters
+    creating build\lib.win32-cpython-38\sipbuild\module\source
+    creating build\lib.win32-cpython-38\sipbuild\module\source\12
+    copying sipbuild\module\source\12\apiversions.c -> build\lib.win32-cpython-38\sipbuild\module\source\12
+    copying sipbuild\module\source\12\bool.cpp -> build\lib.win32-cpython-38\sipbuild\module\source\12
+    copying sipbuild\module\source\12\descriptors.c -> build\lib.win32-cpython-38\sipbuild\module\source\12
+    copying sipbuild\module\source\12\int_convertors.c -> build\lib.win32-cpython-38\sipbuild\module\source\12
+    copying sipbuild\module\source\12\LICENSE -> build\lib.win32-cpython-38\sipbuild\module\source\12
+    copying sipbuild\module\source\12\LICENSE-GPL2 -> build\lib.win32-cpython-38\sipbuild\module\source\12
+    copying sipbuild\module\source\12\LICENSE-GPL3 -> build\lib.win32-cpython-38\sipbuild\module\source\12
+    copying sipbuild\module\source\12\MANIFEST.in -> build\lib.win32-cpython-38\sipbuild\module\source\12
+    copying sipbuild\module\source\12\objmap.c -> build\lib.win32-cpython-38\sipbuild\module\source\12
+    copying sipbuild\module\source\12\pyproject.toml -> build\lib.win32-cpython-38\sipbuild\module\source\12
+    copying sipbuild\module\source\12\qtlib.c -> build\lib.win32-cpython-38\sipbuild\module\source\12
+    copying sipbuild\module\source\12\README.in -> build\lib.win32-cpython-38\sipbuild\module\source\12
+    copying sipbuild\module\source\12\setup.cfg.in -> build\lib.win32-cpython-38\sipbuild\module\source\12
+    copying sipbuild\module\source\12\setup.py.in -> build\lib.win32-cpython-38\sipbuild\module\source\12
+    copying sipbuild\module\source\12\sip.h.in -> build\lib.win32-cpython-38\sipbuild\module\source\12
+    copying sipbuild\module\source\12\sip.pyi -> build\lib.win32-cpython-38\sipbuild\module\source\12
+    copying sipbuild\module\source\12\sip.rst.in -> build\lib.win32-cpython-38\sipbuild\module\source\12
+    copying sipbuild\module\source\12\sipint.h -> build\lib.win32-cpython-38\sipbuild\module\source\12
+    copying sipbuild\module\source\12\siplib.c -> build\lib.win32-cpython-38\sipbuild\module\source\12
+    copying sipbuild\module\source\12\sip_array.c -> build\lib.win32-cpython-38\sipbuild\module\source\12
+    copying sipbuild\module\source\12\sip_array.h -> build\lib.win32-cpython-38\sipbuild\module\source\12
+    copying sipbuild\module\source\12\threads.c -> build\lib.win32-cpython-38\sipbuild\module\source\12
+    copying sipbuild\module\source\12\voidptr.c -> build\lib.win32-cpython-38\sipbuild\module\source\12
+    creating build\lib.win32-cpython-38\sipbuild\module\source\13
+    copying sipbuild\module\source\13\LICENSE -> build\lib.win32-cpython-38\sipbuild\module\source\13
+    copying sipbuild\module\source\13\LICENSE-GPL2 -> build\lib.win32-cpython-38\sipbuild\module\source\13
+    copying sipbuild\module\source\13\LICENSE-GPL3 -> build\lib.win32-cpython-38\sipbuild\module\source\13
+    copying sipbuild\module\source\13\MANIFEST.in -> build\lib.win32-cpython-38\sipbuild\module\source\13
+    copying sipbuild\module\source\13\pyproject.toml -> build\lib.win32-cpython-38\sipbuild\module\source\13
+    copying sipbuild\module\source\13\README.in -> build\lib.win32-cpython-38\sipbuild\module\source\13
+    copying sipbuild\module\source\13\setup.cfg.in -> build\lib.win32-cpython-38\sipbuild\module\source\13
+    copying sipbuild\module\source\13\setup.py.in -> build\lib.win32-cpython-38\sipbuild\module\source\13
+    copying sipbuild\module\source\13\sip.h.in -> build\lib.win32-cpython-38\sipbuild\module\source\13
+    copying sipbuild\module\source\13\sip.pyi -> build\lib.win32-cpython-38\sipbuild\module\source\13
+    copying sipbuild\module\source\13\sip.rst.in -> build\lib.win32-cpython-38\sipbuild\module\source\13
+    copying sipbuild\module\source\13\sip_array.c -> build\lib.win32-cpython-38\sipbuild\module\source\13
+    copying sipbuild\module\source\13\sip_array.h -> build\lib.win32-cpython-38\sipbuild\module\source\13
+    copying sipbuild\module\source\13\sip_bool.cpp -> build\lib.win32-cpython-38\sipbuild\module\source\13
+    copying sipbuild\module\source\13\sip_core.c -> build\lib.win32-cpython-38\sipbuild\module\source\13
+    copying sipbuild\module\source\13\sip_core.h -> build\lib.win32-cpython-38\sipbuild\module\source\13
+    copying sipbuild\module\source\13\sip_descriptors.c -> build\lib.win32-cpython-38\sipbuild\module\source\13
+    copying sipbuild\module\source\13\sip_enum.c -> build\lib.win32-cpython-38\sipbuild\module\source\13
+    copying sipbuild\module\source\13\sip_enum.h -> build\lib.win32-cpython-38\sipbuild\module\source\13
+    copying sipbuild\module\source\13\sip_int_convertors.c -> build\lib.win32-cpython-38\sipbuild\module\source\13
+    copying sipbuild\module\source\13\sip_object_map.c -> build\lib.win32-cpython-38\sipbuild\module\source\13
+    copying sipbuild\module\source\13\sip_threads.c -> build\lib.win32-cpython-38\sipbuild\module\source\13
+    copying sipbuild\module\source\13\sip_voidptr.c -> build\lib.win32-cpython-38\sipbuild\module\source\13
+    running build_ext
+    building 'sipbuild.code_generator' extension
+    error: Microsoft Visual C++ 14.0 or greater is required. Get it with "Microsoft C++ Build Tools": https://visualstudio.microsoft.com/visual-cpp-build-tools/
+    ----------------------------------------
+    ERROR: Failed building wheel for sip
+    Running setup.py clean for sip
+  Failed to build sip
+  ERROR: Could not build wheels for sip which use PEP 517 and cannot be installed directly
+  WARNING: You are using pip version 19.2.3, however version 23.3 is available.
+  You should consider upgrading via the 'python -m pip install --upgrade pip' command.
+  ----------------------------------------
+ERROR: Command errored out with exit status 1: 'c:\python38\python.exe' 'c:\python38\lib\site-packages\pip' install --ignore-installed --no-user --prefix 'C:\Users\sauret\AppData\Local\Temp\pip-build-env-dfsn8d65\overlay' --no-warn-script-location --no-binary :none: --only-binary :none: -i https://pypi.org/simple -- 'sip >=6.5, <7' 'PyQt-builder >=1.15, <2' Check the logs for full command output.
+WARNING: You are using pip version 19.2.3, however version 23.3 is available.
+You should consider upgrading via the 'python -m pip install --upgrade pip' command.
+
+================================
+  ERROR: Command errored out with exit status 1:
+   command: 'c:\python38\python.exe' 'c:\python38\lib\site-packages\pip' install --ignore-installed --no-user --prefix 'C:\Users\sauret\AppData\Local\Temp\pip-build-env-n23_jjqc\overlay' --no-warn-script-location --no-binary :none: --only-binary :none: -i https://pypi.org/simple -- 'sip >=6.5, <7' 'PyQt-builder >=1.15, <2'
+       cwd: None
+  Complete output (165 lines):
+  Collecting sip<7,>=6.5
+    Using cached https://files.pythonhosted.org/packages/a6/4e/c34eee70109e9a8110672f074fc18b5022bf4b9b4c92641245c73ae0b21a/sip-6.7.12.tar.gz
+    Installing build dependencies: started
+    Installing build dependencies: finished with status 'done'
+    Getting requirements to build wheel: started
+    Getting requirements to build wheel: finished with status 'done'
+      Preparing wheel metadata: started
+      Preparing wheel metadata: finished with status 'done'
+  Collecting PyQt-builder<2,>=1.15
+    Using cached https://files.pythonhosted.org/packages/6b/31/89d6cd9d6ddc7fe160d6834d498c69fc92b9e70771e280a59cc8a085d5a2/PyQt_builder-1.15.3-py3-none-any.whl
+  Collecting ply (from sip<7,>=6.5)
+    Using cached https://files.pythonhosted.org/packages/a3/58/35da89ee790598a0700ea49b2a66594140f44dec458c07e8e3d4979137fc/ply-3.11-py2.py3-none-any.whl
+  Collecting tomli; python_version < "3.11" (from sip<7,>=6.5)
+    Using cached https://files.pythonhosted.org/packages/97/75/10a9ebee3fd790d20926a90a2547f0bf78f371b2f13aa822c759680ca7b9/tomli-2.0.1-py3-none-any.whl
+  Collecting setuptools (from sip<7,>=6.5)
+    Using cached https://files.pythonhosted.org/packages/bb/26/7945080113158354380a12ce26873dd6c1ebd88d47f5bc24e2c5bb38c16a/setuptools-68.2.2-py3-none-any.whl
+  Collecting packaging (from sip<7,>=6.5)
+    Using cached https://files.pythonhosted.org/packages/ec/1a/610693ac4ee14fcdf2d9bf3c493370e4f2ef7ae2e19217d7a237ff42367d/packaging-23.2-py3-none-any.whl
+  Building wheels for collected packages: sip
+    Building wheel for sip (PEP 517): started
+    Building wheel for sip (PEP 517): finished with status 'error'
+    ERROR: Command errored out with exit status 1:
+     command: 'c:\python38\python.exe' 'c:\python38\lib\site-packages\pip\_vendor\pep517\_in_process.py' build_wheel 'C:\Users\sauret\AppData\Local\Temp\tmpf1ys49xi'
+         cwd: C:\Users\sauret\AppData\Local\Temp\pip-install-s2ogbjym\sip
+    Complete output (133 lines):
+    running bdist_wheel
+    running build
+    running build_py
+    creating build
+    creating build\lib.win32-cpython-38
+    creating build\lib.win32-cpython-38\sipbuild
+    copying sipbuild\abstract_builder.py -> build\lib.win32-cpython-38\sipbuild
+    copying sipbuild\abstract_project.py -> build\lib.win32-cpython-38\sipbuild
+    copying sipbuild\api.py -> build\lib.win32-cpython-38\sipbuild
+    copying sipbuild\argument_parser.py -> build\lib.win32-cpython-38\sipbuild
+    copying sipbuild\bindings.py -> build\lib.win32-cpython-38\sipbuild
+    copying sipbuild\bindings_configuration.py -> build\lib.win32-cpython-38\sipbuild
+    copying sipbuild\buildable.py -> build\lib.win32-cpython-38\sipbuild
+    copying sipbuild\builder.py -> build\lib.win32-cpython-38\sipbuild
+    copying sipbuild\configurable.py -> build\lib.win32-cpython-38\sipbuild
+    copying sipbuild\distutils_builder.py -> build\lib.win32-cpython-38\sipbuild
+    copying sipbuild\exceptions.py -> build\lib.win32-cpython-38\sipbuild
+    copying sipbuild\installable.py -> build\lib.win32-cpython-38\sipbuild
+    copying sipbuild\project.py -> build\lib.win32-cpython-38\sipbuild
+    copying sipbuild\pyproject.py -> build\lib.win32-cpython-38\sipbuild
+    copying sipbuild\py_versions.py -> build\lib.win32-cpython-38\sipbuild
+    copying sipbuild\setuptools_builder.py -> build\lib.win32-cpython-38\sipbuild
+    copying sipbuild\toml.py -> build\lib.win32-cpython-38\sipbuild
+    copying sipbuild\version.py -> build\lib.win32-cpython-38\sipbuild
+    copying sipbuild\__init__.py -> build\lib.win32-cpython-38\sipbuild
+    creating build\lib.win32-cpython-38\sipbuild\distinfo
+    copying sipbuild\distinfo\distinfo.py -> build\lib.win32-cpython-38\sipbuild\distinfo
+    copying sipbuild\distinfo\main.py -> build\lib.win32-cpython-38\sipbuild\distinfo
+    copying sipbuild\distinfo\__init__.py -> build\lib.win32-cpython-38\sipbuild\distinfo
+    creating build\lib.win32-cpython-38\sipbuild\generator
+    copying sipbuild\generator\error_log.py -> build\lib.win32-cpython-38\sipbuild\generator
+    copying sipbuild\generator\instantiations.py -> build\lib.win32-cpython-38\sipbuild\generator
+    copying sipbuild\generator\python_slots.py -> build\lib.win32-cpython-38\sipbuild\generator
+    copying sipbuild\generator\scoped_name.py -> build\lib.win32-cpython-38\sipbuild\generator
+    copying sipbuild\generator\specification.py -> build\lib.win32-cpython-38\sipbuild\generator
+    copying sipbuild\generator\templates.py -> build\lib.win32-cpython-38\sipbuild\generator
+    copying sipbuild\generator\utils.py -> build\lib.win32-cpython-38\sipbuild\generator
+    copying sipbuild\generator\__init__.py -> build\lib.win32-cpython-38\sipbuild\generator
+    creating build\lib.win32-cpython-38\sipbuild\module
+    copying sipbuild\module\abi_version.py -> build\lib.win32-cpython-38\sipbuild\module
+    copying sipbuild\module\main.py -> build\lib.win32-cpython-38\sipbuild\module
+    copying sipbuild\module\module.py -> build\lib.win32-cpython-38\sipbuild\module
+    copying sipbuild\module\__init__.py -> build\lib.win32-cpython-38\sipbuild\module
+    creating build\lib.win32-cpython-38\sipbuild\tools
+    copying sipbuild\tools\build.py -> build\lib.win32-cpython-38\sipbuild\tools
+    copying sipbuild\tools\install.py -> build\lib.win32-cpython-38\sipbuild\tools
+    copying sipbuild\tools\sdist.py -> build\lib.win32-cpython-38\sipbuild\tools
+    copying sipbuild\tools\wheel.py -> build\lib.win32-cpython-38\sipbuild\tools
+    copying sipbuild\tools\__init__.py -> build\lib.win32-cpython-38\sipbuild\tools
+    creating build\lib.win32-cpython-38\sipbuild\generator\outputs
+    copying sipbuild\generator\outputs\api.py -> build\lib.win32-cpython-38\sipbuild\generator\outputs
+    copying sipbuild\generator\outputs\extracts.py -> build\lib.win32-cpython-38\sipbuild\generator\outputs
+    copying sipbuild\generator\outputs\pyi.py -> build\lib.win32-cpython-38\sipbuild\generator\outputs
+    copying sipbuild\generator\outputs\type_hints.py -> build\lib.win32-cpython-38\sipbuild\generator\outputs
+    copying sipbuild\generator\outputs\xml.py -> build\lib.win32-cpython-38\sipbuild\generator\outputs
+    copying sipbuild\generator\outputs\__init__.py -> build\lib.win32-cpython-38\sipbuild\generator\outputs
+    creating build\lib.win32-cpython-38\sipbuild\generator\parser
+    copying sipbuild\generator\parser\annotations.py -> build\lib.win32-cpython-38\sipbuild\generator\parser
+    copying sipbuild\generator\parser\parser.py -> build\lib.win32-cpython-38\sipbuild\generator\parser
+    copying sipbuild\generator\parser\parser_manager.py -> build\lib.win32-cpython-38\sipbuild\generator\parser
+    copying sipbuild\generator\parser\parsetab.py -> build\lib.win32-cpython-38\sipbuild\generator\parser
+    copying sipbuild\generator\parser\python_exceptions.py -> build\lib.win32-cpython-38\sipbuild\generator\parser
+    copying sipbuild\generator\parser\rules.py -> build\lib.win32-cpython-38\sipbuild\generator\parser
+    copying sipbuild\generator\parser\tokens.py -> build\lib.win32-cpython-38\sipbuild\generator\parser
+    copying sipbuild\generator\parser\__init__.py -> build\lib.win32-cpython-38\sipbuild\generator\parser
+    creating build\lib.win32-cpython-38\sipbuild\generator\resolver
+    copying sipbuild\generator\resolver\resolver.py -> build\lib.win32-cpython-38\sipbuild\generator\resolver
+    copying sipbuild\generator\resolver\__init__.py -> build\lib.win32-cpython-38\sipbuild\generator\resolver
+    creating build\lib.win32-cpython-38\sipbuild\generator\outputs\formatters
+    copying sipbuild\generator\outputs\formatters\argument.py -> build\lib.win32-cpython-38\sipbuild\generator\outputs\formatters
+    copying sipbuild\generator\outputs\formatters\base_formatter.py -> build\lib.win32-cpython-38\sipbuild\generator\outputs\formatters
+    copying sipbuild\generator\outputs\formatters\enum.py -> build\lib.win32-cpython-38\sipbuild\generator\outputs\formatters
+    copying sipbuild\generator\outputs\formatters\klass.py -> build\lib.win32-cpython-38\sipbuild\generator\outputs\formatters
+    copying sipbuild\generator\outputs\formatters\overload.py -> build\lib.win32-cpython-38\sipbuild\generator\outputs\formatters
+    copying sipbuild\generator\outputs\formatters\scoped.py -> build\lib.win32-cpython-38\sipbuild\generator\outputs\formatters
+    copying sipbuild\generator\outputs\formatters\signature.py -> build\lib.win32-cpython-38\sipbuild\generator\outputs\formatters
+    copying sipbuild\generator\outputs\formatters\template.py -> build\lib.win32-cpython-38\sipbuild\generator\outputs\formatters
+    copying sipbuild\generator\outputs\formatters\utils.py -> build\lib.win32-cpython-38\sipbuild\generator\outputs\formatters
+    copying sipbuild\generator\outputs\formatters\value_list.py -> build\lib.win32-cpython-38\sipbuild\generator\outputs\formatters
+    copying sipbuild\generator\outputs\formatters\variable.py -> build\lib.win32-cpython-38\sipbuild\generator\outputs\formatters
+    copying sipbuild\generator\outputs\formatters\__init__.py -> build\lib.win32-cpython-38\sipbuild\generator\outputs\formatters
+    creating build\lib.win32-cpython-38\sipbuild\module\source
+    creating build\lib.win32-cpython-38\sipbuild\module\source\12
+    copying sipbuild\module\source\12\apiversions.c -> build\lib.win32-cpython-38\sipbuild\module\source\12
+    copying sipbuild\module\source\12\bool.cpp -> build\lib.win32-cpython-38\sipbuild\module\source\12
+    copying sipbuild\module\source\12\descriptors.c -> build\lib.win32-cpython-38\sipbuild\module\source\12
+    copying sipbuild\module\source\12\int_convertors.c -> build\lib.win32-cpython-38\sipbuild\module\source\12
+    copying sipbuild\module\source\12\LICENSE -> build\lib.win32-cpython-38\sipbuild\module\source\12
+    copying sipbuild\module\source\12\LICENSE-GPL2 -> build\lib.win32-cpython-38\sipbuild\module\source\12
+    copying sipbuild\module\source\12\LICENSE-GPL3 -> build\lib.win32-cpython-38\sipbuild\module\source\12
+    copying sipbuild\module\source\12\MANIFEST.in -> build\lib.win32-cpython-38\sipbuild\module\source\12
+    copying sipbuild\module\source\12\objmap.c -> build\lib.win32-cpython-38\sipbuild\module\source\12
+    copying sipbuild\module\source\12\pyproject.toml -> build\lib.win32-cpython-38\sipbuild\module\source\12
+    copying sipbuild\module\source\12\qtlib.c -> build\lib.win32-cpython-38\sipbuild\module\source\12
+    copying sipbuild\module\source\12\README.in -> build\lib.win32-cpython-38\sipbuild\module\source\12
+    copying sipbuild\module\source\12\setup.cfg.in -> build\lib.win32-cpython-38\sipbuild\module\source\12
+    copying sipbuild\module\source\12\setup.py.in -> build\lib.win32-cpython-38\sipbuild\module\source\12
+    copying sipbuild\module\source\12\sip.h.in -> build\lib.win32-cpython-38\sipbuild\module\source\12
+    copying sipbuild\module\source\12\sip.pyi -> build\lib.win32-cpython-38\sipbuild\module\source\12
+    copying sipbuild\module\source\12\sip.rst.in -> build\lib.win32-cpython-38\sipbuild\module\source\12
+    copying sipbuild\module\source\12\sipint.h -> build\lib.win32-cpython-38\sipbuild\module\source\12
+    copying sipbuild\module\source\12\siplib.c -> build\lib.win32-cpython-38\sipbuild\module\source\12
+    copying sipbuild\module\source\12\sip_array.c -> build\lib.win32-cpython-38\sipbuild\module\source\12
+    copying sipbuild\module\source\12\sip_array.h -> build\lib.win32-cpython-38\sipbuild\module\source\12
+    copying sipbuild\module\source\12\threads.c -> build\lib.win32-cpython-38\sipbuild\module\source\12
+    copying sipbuild\module\source\12\voidptr.c -> build\lib.win32-cpython-38\sipbuild\module\source\12
+    creating build\lib.win32-cpython-38\sipbuild\module\source\13
+    copying sipbuild\module\source\13\LICENSE -> build\lib.win32-cpython-38\sipbuild\module\source\13
+    copying sipbuild\module\source\13\LICENSE-GPL2 -> build\lib.win32-cpython-38\sipbuild\module\source\13
+    copying sipbuild\module\source\13\LICENSE-GPL3 -> build\lib.win32-cpython-38\sipbuild\module\source\13
+    copying sipbuild\module\source\13\MANIFEST.in -> build\lib.win32-cpython-38\sipbuild\module\source\13
+    copying sipbuild\module\source\13\pyproject.toml -> build\lib.win32-cpython-38\sipbuild\module\source\13
+    copying sipbuild\module\source\13\README.in -> build\lib.win32-cpython-38\sipbuild\module\source\13
+    copying sipbuild\module\source\13\setup.cfg.in -> build\lib.win32-cpython-38\sipbuild\module\source\13
+    copying sipbuild\module\source\13\setup.py.in -> build\lib.win32-cpython-38\sipbuild\module\source\13
+    copying sipbuild\module\source\13\sip.h.in -> build\lib.win32-cpython-38\sipbuild\module\source\13
+    copying sipbuild\module\source\13\sip.pyi -> build\lib.win32-cpython-38\sipbuild\module\source\13
+    copying sipbuild\module\source\13\sip.rst.in -> build\lib.win32-cpython-38\sipbuild\module\source\13
+    copying sipbuild\module\source\13\sip_array.c -> build\lib.win32-cpython-38\sipbuild\module\source\13
+    copying sipbuild\module\source\13\sip_array.h -> build\lib.win32-cpython-38\sipbuild\module\source\13
+    copying sipbuild\module\source\13\sip_bool.cpp -> build\lib.win32-cpython-38\sipbuild\module\source\13
+    copying sipbuild\module\source\13\sip_core.c -> build\lib.win32-cpython-38\sipbuild\module\source\13
+    copying sipbuild\module\source\13\sip_core.h -> build\lib.win32-cpython-38\sipbuild\module\source\13
+    copying sipbuild\module\source\13\sip_descriptors.c -> build\lib.win32-cpython-38\sipbuild\module\source\13
+    copying sipbuild\module\source\13\sip_enum.c -> build\lib.win32-cpython-38\sipbuild\module\source\13
+    copying sipbuild\module\source\13\sip_enum.h -> build\lib.win32-cpython-38\sipbuild\module\source\13
+    copying sipbuild\module\source\13\sip_int_convertors.c -> build\lib.win32-cpython-38\sipbuild\module\source\13
+    copying sipbuild\module\source\13\sip_object_map.c -> build\lib.win32-cpython-38\sipbuild\module\source\13
+    copying sipbuild\module\source\13\sip_threads.c -> build\lib.win32-cpython-38\sipbuild\module\source\13
+    copying sipbuild\module\source\13\sip_voidptr.c -> build\lib.win32-cpython-38\sipbuild\module\source\13
+    running build_ext
+    building 'sipbuild.code_generator' extension
+    error: Microsoft Visual C++ 14.0 or greater is required. Get it with "Microsoft C++ Build Tools": https://visualstudio.microsoft.com/visual-cpp-build-tools/
+    ----------------------------------------
+    ERROR: Failed building wheel for sip
+    Running setup.py clean for sip
+  Failed to build sip
+  ERROR: Could not build wheels for sip which use PEP 517 and cannot be installed directly
+  WARNING: You are using pip version 19.2.3, however version 23.3 is available.
+  You should consider upgrading via the 'python -m pip install --upgrade pip' command.
+  ----------------------------------------
+ERROR: Command errored out with exit status 1: 'c:\python38\python.exe' 'c:\python38\lib\site-packages\pip' install --ignore-installed --no-user --prefix 'C:\Users\sauret\AppData\Local\Temp\pip-build-env-n23_jjqc\overlay' --no-warn-script-location --no-binary :none: --only-binary :none: -i https://pypi.org/simple -- 'sip >=6.5, <7' 'PyQt-builder >=1.15, <2' Check the logs for full command output.
+WARNING: You are using pip version 19.2.3, however version 23.3 is available.
+You should consider upgrading via the 'python -m pip install --upgrade pip' command.
+
+====================================================================
+  ERROR: Command errored out with exit status 1:
+   command: 'c:\python38\python.exe' 'c:\python38\lib\site-packages\pip' install --ignore-installed --no-user --prefix 'C:\Users\sauret\AppData\Local\Temp\pip-build-env-0c6pmitg\overlay' --no-warn-script-location --no-binary :none: --only-binary :none: -i https://pypi.org/simple -- 'sip >=6.5, <7' 'PyQt-builder >=1.15, <2'
+       cwd: None
+  Complete output (165 lines):
+  Collecting sip<7,>=6.5
+    Using cached https://files.pythonhosted.org/packages/a6/4e/c34eee70109e9a8110672f074fc18b5022bf4b9b4c92641245c73ae0b21a/sip-6.7.12.tar.gz
+    Installing build dependencies: started
+    Installing build dependencies: finished with status 'done'
+    Getting requirements to build wheel: started
+    Getting requirements to build wheel: finished with status 'done'
+      Preparing wheel metadata: started
+      Preparing wheel metadata: finished with status 'done'
+  Collecting PyQt-builder<2,>=1.15
+    Using cached https://files.pythonhosted.org/packages/6b/31/89d6cd9d6ddc7fe160d6834d498c69fc92b9e70771e280a59cc8a085d5a2/PyQt_builder-1.15.3-py3-none-any.whl
+  Collecting packaging (from sip<7,>=6.5)
+    Using cached https://files.pythonhosted.org/packages/ec/1a/610693ac4ee14fcdf2d9bf3c493370e4f2ef7ae2e19217d7a237ff42367d/packaging-23.2-py3-none-any.whl
+  Collecting setuptools (from sip<7,>=6.5)
+    Using cached https://files.pythonhosted.org/packages/bb/26/7945080113158354380a12ce26873dd6c1ebd88d47f5bc24e2c5bb38c16a/setuptools-68.2.2-py3-none-any.whl
+  Collecting tomli; python_version < "3.11" (from sip<7,>=6.5)
+    Using cached https://files.pythonhosted.org/packages/97/75/10a9ebee3fd790d20926a90a2547f0bf78f371b2f13aa822c759680ca7b9/tomli-2.0.1-py3-none-any.whl
+  Collecting ply (from sip<7,>=6.5)
+    Using cached https://files.pythonhosted.org/packages/a3/58/35da89ee790598a0700ea49b2a66594140f44dec458c07e8e3d4979137fc/ply-3.11-py2.py3-none-any.whl
+  Building wheels for collected packages: sip
+    Building wheel for sip (PEP 517): started
+    Building wheel for sip (PEP 517): finished with status 'error'
+    ERROR: Command errored out with exit status 1:
+     command: 'c:\python38\python.exe' 'c:\python38\lib\site-packages\pip\_vendor\pep517\_in_process.py' build_wheel 'C:\Users\sauret\AppData\Local\Temp\tmp22vmbp88'
+         cwd: C:\Users\sauret\AppData\Local\Temp\pip-install-6utcu6ln\sip
+    Complete output (133 lines):
+    running bdist_wheel
+    running build
+    running build_py
+    creating build
+    creating build\lib.win32-cpython-38
+    creating build\lib.win32-cpython-38\sipbuild
+    copying sipbuild\abstract_builder.py -> build\lib.win32-cpython-38\sipbuild
+    copying sipbuild\abstract_project.py -> build\lib.win32-cpython-38\sipbuild
+    copying sipbuild\api.py -> build\lib.win32-cpython-38\sipbuild
+    copying sipbuild\argument_parser.py -> build\lib.win32-cpython-38\sipbuild
+    copying sipbuild\bindings.py -> build\lib.win32-cpython-38\sipbuild
+    copying sipbuild\bindings_configuration.py -> build\lib.win32-cpython-38\sipbuild
+    copying sipbuild\buildable.py -> build\lib.win32-cpython-38\sipbuild
+    copying sipbuild\builder.py -> build\lib.win32-cpython-38\sipbuild
+    copying sipbuild\configurable.py -> build\lib.win32-cpython-38\sipbuild
+    copying sipbuild\distutils_builder.py -> build\lib.win32-cpython-38\sipbuild
+    copying sipbuild\exceptions.py -> build\lib.win32-cpython-38\sipbuild
+    copying sipbuild\installable.py -> build\lib.win32-cpython-38\sipbuild
+    copying sipbuild\project.py -> build\lib.win32-cpython-38\sipbuild
+    copying sipbuild\pyproject.py -> build\lib.win32-cpython-38\sipbuild
+    copying sipbuild\py_versions.py -> build\lib.win32-cpython-38\sipbuild
+    copying sipbuild\setuptools_builder.py -> build\lib.win32-cpython-38\sipbuild
+    copying sipbuild\toml.py -> build\lib.win32-cpython-38\sipbuild
+    copying sipbuild\version.py -> build\lib.win32-cpython-38\sipbuild
+    copying sipbuild\__init__.py -> build\lib.win32-cpython-38\sipbuild
+    creating build\lib.win32-cpython-38\sipbuild\distinfo
+    copying sipbuild\distinfo\distinfo.py -> build\lib.win32-cpython-38\sipbuild\distinfo
+    copying sipbuild\distinfo\main.py -> build\lib.win32-cpython-38\sipbuild\distinfo
+    copying sipbuild\distinfo\__init__.py -> build\lib.win32-cpython-38\sipbuild\distinfo
+    creating build\lib.win32-cpython-38\sipbuild\generator
+    copying sipbuild\generator\error_log.py -> build\lib.win32-cpython-38\sipbuild\generator
+    copying sipbuild\generator\instantiations.py -> build\lib.win32-cpython-38\sipbuild\generator
+    copying sipbuild\generator\python_slots.py -> build\lib.win32-cpython-38\sipbuild\generator
+    copying sipbuild\generator\scoped_name.py -> build\lib.win32-cpython-38\sipbuild\generator
+    copying sipbuild\generator\specification.py -> build\lib.win32-cpython-38\sipbuild\generator
+    copying sipbuild\generator\templates.py -> build\lib.win32-cpython-38\sipbuild\generator
+    copying sipbuild\generator\utils.py -> build\lib.win32-cpython-38\sipbuild\generator
+    copying sipbuild\generator\__init__.py -> build\lib.win32-cpython-38\sipbuild\generator
+    creating build\lib.win32-cpython-38\sipbuild\module
+    copying sipbuild\module\abi_version.py -> build\lib.win32-cpython-38\sipbuild\module
+    copying sipbuild\module\main.py -> build\lib.win32-cpython-38\sipbuild\module
+    copying sipbuild\module\module.py -> build\lib.win32-cpython-38\sipbuild\module
+    copying sipbuild\module\__init__.py -> build\lib.win32-cpython-38\sipbuild\module
+    creating build\lib.win32-cpython-38\sipbuild\tools
+    copying sipbuild\tools\build.py -> build\lib.win32-cpython-38\sipbuild\tools
+    copying sipbuild\tools\install.py -> build\lib.win32-cpython-38\sipbuild\tools
+    copying sipbuild\tools\sdist.py -> build\lib.win32-cpython-38\sipbuild\tools
+    copying sipbuild\tools\wheel.py -> build\lib.win32-cpython-38\sipbuild\tools
+    copying sipbuild\tools\__init__.py -> build\lib.win32-cpython-38\sipbuild\tools
+    creating build\lib.win32-cpython-38\sipbuild\generator\outputs
+    copying sipbuild\generator\outputs\api.py -> build\lib.win32-cpython-38\sipbuild\generator\outputs
+    copying sipbuild\generator\outputs\extracts.py -> build\lib.win32-cpython-38\sipbuild\generator\outputs
+    copying sipbuild\generator\outputs\pyi.py -> build\lib.win32-cpython-38\sipbuild\generator\outputs
+    copying sipbuild\generator\outputs\type_hints.py -> build\lib.win32-cpython-38\sipbuild\generator\outputs
+    copying sipbuild\generator\outputs\xml.py -> build\lib.win32-cpython-38\sipbuild\generator\outputs
+    copying sipbuild\generator\outputs\__init__.py -> build\lib.win32-cpython-38\sipbuild\generator\outputs
+    creating build\lib.win32-cpython-38\sipbuild\generator\parser
+    copying sipbuild\generator\parser\annotations.py -> build\lib.win32-cpython-38\sipbuild\generator\parser
+    copying sipbuild\generator\parser\parser.py -> build\lib.win32-cpython-38\sipbuild\generator\parser
+    copying sipbuild\generator\parser\parser_manager.py -> build\lib.win32-cpython-38\sipbuild\generator\parser
+    copying sipbuild\generator\parser\parsetab.py -> build\lib.win32-cpython-38\sipbuild\generator\parser
+    copying sipbuild\generator\parser\python_exceptions.py -> build\lib.win32-cpython-38\sipbuild\generator\parser
+    copying sipbuild\generator\parser\rules.py -> build\lib.win32-cpython-38\sipbuild\generator\parser
+    copying sipbuild\generator\parser\tokens.py -> build\lib.win32-cpython-38\sipbuild\generator\parser
+    copying sipbuild\generator\parser\__init__.py -> build\lib.win32-cpython-38\sipbuild\generator\parser
+    creating build\lib.win32-cpython-38\sipbuild\generator\resolver
+    copying sipbuild\generator\resolver\resolver.py -> build\lib.win32-cpython-38\sipbuild\generator\resolver
+    copying sipbuild\generator\resolver\__init__.py -> build\lib.win32-cpython-38\sipbuild\generator\resolver
+    creating build\lib.win32-cpython-38\sipbuild\generator\outputs\formatters
+    copying sipbuild\generator\outputs\formatters\argument.py -> build\lib.win32-cpython-38\sipbuild\generator\outputs\formatters
+    copying sipbuild\generator\outputs\formatters\base_formatter.py -> build\lib.win32-cpython-38\sipbuild\generator\outputs\formatters
+    copying sipbuild\generator\outputs\formatters\enum.py -> build\lib.win32-cpython-38\sipbuild\generator\outputs\formatters
+    copying sipbuild\generator\outputs\formatters\klass.py -> build\lib.win32-cpython-38\sipbuild\generator\outputs\formatters
+    copying sipbuild\generator\outputs\formatters\overload.py -> build\lib.win32-cpython-38\sipbuild\generator\outputs\formatters
+    copying sipbuild\generator\outputs\formatters\scoped.py -> build\lib.win32-cpython-38\sipbuild\generator\outputs\formatters
+    copying sipbuild\generator\outputs\formatters\signature.py -> build\lib.win32-cpython-38\sipbuild\generator\outputs\formatters
+    copying sipbuild\generator\outputs\formatters\template.py -> build\lib.win32-cpython-38\sipbuild\generator\outputs\formatters
+    copying sipbuild\generator\outputs\formatters\utils.py -> build\lib.win32-cpython-38\sipbuild\generator\outputs\formatters
+    copying sipbuild\generator\outputs\formatters\value_list.py -> build\lib.win32-cpython-38\sipbuild\generator\outputs\formatters
+    copying sipbuild\generator\outputs\formatters\variable.py -> build\lib.win32-cpython-38\sipbuild\generator\outputs\formatters
+    copying sipbuild\generator\outputs\formatters\__init__.py -> build\lib.win32-cpython-38\sipbuild\generator\outputs\formatters
+    creating build\lib.win32-cpython-38\sipbuild\module\source
+    creating build\lib.win32-cpython-38\sipbuild\module\source\12
+    copying sipbuild\module\source\12\apiversions.c -> build\lib.win32-cpython-38\sipbuild\module\source\12
+    copying sipbuild\module\source\12\bool.cpp -> build\lib.win32-cpython-38\sipbuild\module\source\12
+    copying sipbuild\module\source\12\descriptors.c -> build\lib.win32-cpython-38\sipbuild\module\source\12
+    copying sipbuild\module\source\12\int_convertors.c -> build\lib.win32-cpython-38\sipbuild\module\source\12
+    copying sipbuild\module\source\12\LICENSE -> build\lib.win32-cpython-38\sipbuild\module\source\12
+    copying sipbuild\module\source\12\LICENSE-GPL2 -> build\lib.win32-cpython-38\sipbuild\module\source\12
+    copying sipbuild\module\source\12\LICENSE-GPL3 -> build\lib.win32-cpython-38\sipbuild\module\source\12
+    copying sipbuild\module\source\12\MANIFEST.in -> build\lib.win32-cpython-38\sipbuild\module\source\12
+    copying sipbuild\module\source\12\objmap.c -> build\lib.win32-cpython-38\sipbuild\module\source\12
+    copying sipbuild\module\source\12\pyproject.toml -> build\lib.win32-cpython-38\sipbuild\module\source\12
+    copying sipbuild\module\source\12\qtlib.c -> build\lib.win32-cpython-38\sipbuild\module\source\12
+    copying sipbuild\module\source\12\README.in -> build\lib.win32-cpython-38\sipbuild\module\source\12
+    copying sipbuild\module\source\12\setup.cfg.in -> build\lib.win32-cpython-38\sipbuild\module\source\12
+    copying sipbuild\module\source\12\setup.py.in -> build\lib.win32-cpython-38\sipbuild\module\source\12
+    copying sipbuild\module\source\12\sip.h.in -> build\lib.win32-cpython-38\sipbuild\module\source\12
+    copying sipbuild\module\source\12\sip.pyi -> build\lib.win32-cpython-38\sipbuild\module\source\12
+    copying sipbuild\module\source\12\sip.rst.in -> build\lib.win32-cpython-38\sipbuild\module\source\12
+    copying sipbuild\module\source\12\sipint.h -> build\lib.win32-cpython-38\sipbuild\module\source\12
+    copying sipbuild\module\source\12\siplib.c -> build\lib.win32-cpython-38\sipbuild\module\source\12
+    copying sipbuild\module\source\12\sip_array.c -> build\lib.win32-cpython-38\sipbuild\module\source\12
+    copying sipbuild\module\source\12\sip_array.h -> build\lib.win32-cpython-38\sipbuild\module\source\12
+    copying sipbuild\module\source\12\threads.c -> build\lib.win32-cpython-38\sipbuild\module\source\12
+    copying sipbuild\module\source\12\voidptr.c -> build\lib.win32-cpython-38\sipbuild\module\source\12
+    creating build\lib.win32-cpython-38\sipbuild\module\source\13
+    copying sipbuild\module\source\13\LICENSE -> build\lib.win32-cpython-38\sipbuild\module\source\13
+    copying sipbuild\module\source\13\LICENSE-GPL2 -> build\lib.win32-cpython-38\sipbuild\module\source\13
+    copying sipbuild\module\source\13\LICENSE-GPL3 -> build\lib.win32-cpython-38\sipbuild\module\source\13
+    copying sipbuild\module\source\13\MANIFEST.in -> build\lib.win32-cpython-38\sipbuild\module\source\13
+    copying sipbuild\module\source\13\pyproject.toml -> build\lib.win32-cpython-38\sipbuild\module\source\13
+    copying sipbuild\module\source\13\README.in -> build\lib.win32-cpython-38\sipbuild\module\source\13
+    copying sipbuild\module\source\13\setup.cfg.in -> build\lib.win32-cpython-38\sipbuild\module\source\13
+    copying sipbuild\module\source\13\setup.py.in -> build\lib.win32-cpython-38\sipbuild\module\source\13
+    copying sipbuild\module\source\13\sip.h.in -> build\lib.win32-cpython-38\sipbuild\module\source\13
+    copying sipbuild\module\source\13\sip.pyi -> build\lib.win32-cpython-38\sipbuild\module\source\13
+    copying sipbuild\module\source\13\sip.rst.in -> build\lib.win32-cpython-38\sipbuild\module\source\13
+    copying sipbuild\module\source\13\sip_array.c -> build\lib.win32-cpython-38\sipbuild\module\source\13
+    copying sipbuild\module\source\13\sip_array.h -> build\lib.win32-cpython-38\sipbuild\module\source\13
+    copying sipbuild\module\source\13\sip_bool.cpp -> build\lib.win32-cpython-38\sipbuild\module\source\13
+    copying sipbuild\module\source\13\sip_core.c -> build\lib.win32-cpython-38\sipbuild\module\source\13
+    copying sipbuild\module\source\13\sip_core.h -> build\lib.win32-cpython-38\sipbuild\module\source\13
+    copying sipbuild\module\source\13\sip_descriptors.c -> build\lib.win32-cpython-38\sipbuild\module\source\13
+    copying sipbuild\module\source\13\sip_enum.c -> build\lib.win32-cpython-38\sipbuild\module\source\13
+    copying sipbuild\module\source\13\sip_enum.h -> build\lib.win32-cpython-38\sipbuild\module\source\13
+    copying sipbuild\module\source\13\sip_int_convertors.c -> build\lib.win32-cpython-38\sipbuild\module\source\13
+    copying sipbuild\module\source\13\sip_object_map.c -> build\lib.win32-cpython-38\sipbuild\module\source\13
+    copying sipbuild\module\source\13\sip_threads.c -> build\lib.win32-cpython-38\sipbuild\module\source\13
+    copying sipbuild\module\source\13\sip_voidptr.c -> build\lib.win32-cpython-38\sipbuild\module\source\13
+    running build_ext
+    building 'sipbuild.code_generator' extension
+    error: Microsoft Visual C++ 14.0 or greater is required. Get it with "Microsoft C++ Build Tools": https://visualstudio.microsoft.com/visual-cpp-build-tools/
+    ----------------------------------------
+    ERROR: Failed building wheel for sip
+    Running setup.py clean for sip
+  Failed to build sip
+  ERROR: Could not build wheels for sip which use PEP 517 and cannot be installed directly
+  WARNING: You are using pip version 19.2.3, however version 23.3 is available.
+  You should consider upgrading via the 'python -m pip install --upgrade pip' command.
+  ----------------------------------------
+ERROR: Command errored out with exit status 1: 'c:\python38\python.exe' 'c:\python38\lib\site-packages\pip' install --ignore-installed --no-user --prefix 'C:\Users\sauret\AppData\Local\Temp\pip-build-env-0c6pmitg\overlay' --no-warn-script-location --no-binary :none: --only-binary :none: -i https://pypi.org/simple -- 'sip >=6.5, <7' 'PyQt-builder >=1.15, <2' Check the logs for full command output.
+WARNING: You are using pip version 19.2.3, however version 23.3 is available.
+You should consider upgrading via the 'python -m pip install --upgrade pip' command.
+3333333333333333333333333333333333333333333333333333333333
+  ERROR: Command errored out with exit status 1:
+   command: 'c:\python38\python.exe' 'c:\python38\lib\site-packages\pip' install --ignore-installed --no-user --prefix 'C:\Users\sauret\AppData\Local\Temp\pip-build-env-0wwxt71m\overlay' --no-warn-script-location --no-binary :none: --only-binary :none: -i https://pypi.org/simple -- 'sip >=6.5, <7' 'PyQt-builder >=1.15, <2'
+       cwd: None
+  Complete output (165 lines):
+  Collecting sip<7,>=6.5
+    Using cached https://files.pythonhosted.org/packages/a6/4e/c34eee70109e9a8110672f074fc18b5022bf4b9b4c92641245c73ae0b21a/sip-6.7.12.tar.gz
+    Installing build dependencies: started
+    Installing build dependencies: finished with status 'done'
+    Getting requirements to build wheel: started
+    Getting requirements to build wheel: finished with status 'done'
+      Preparing wheel metadata: started
+      Preparing wheel metadata: finished with status 'done'
+  Collecting PyQt-builder<2,>=1.15
+    Using cached https://files.pythonhosted.org/packages/6b/31/89d6cd9d6ddc7fe160d6834d498c69fc92b9e70771e280a59cc8a085d5a2/PyQt_builder-1.15.3-py3-none-any.whl
+  Collecting ply (from sip<7,>=6.5)
+    Using cached https://files.pythonhosted.org/packages/a3/58/35da89ee790598a0700ea49b2a66594140f44dec458c07e8e3d4979137fc/ply-3.11-py2.py3-none-any.whl
+  Collecting packaging (from sip<7,>=6.5)
+    Using cached https://files.pythonhosted.org/packages/ec/1a/610693ac4ee14fcdf2d9bf3c493370e4f2ef7ae2e19217d7a237ff42367d/packaging-23.2-py3-none-any.whl
+  Collecting setuptools (from sip<7,>=6.5)
+    Using cached https://files.pythonhosted.org/packages/bb/26/7945080113158354380a12ce26873dd6c1ebd88d47f5bc24e2c5bb38c16a/setuptools-68.2.2-py3-none-any.whl
+  Collecting tomli; python_version < "3.11" (from sip<7,>=6.5)
+    Using cached https://files.pythonhosted.org/packages/97/75/10a9ebee3fd790d20926a90a2547f0bf78f371b2f13aa822c759680ca7b9/tomli-2.0.1-py3-none-any.whl
+  Building wheels for collected packages: sip
+    Building wheel for sip (PEP 517): started
+    Building wheel for sip (PEP 517): finished with status 'error'
+    ERROR: Command errored out with exit status 1:
+     command: 'c:\python38\python.exe' 'c:\python38\lib\site-packages\pip\_vendor\pep517\_in_process.py' build_wheel 'C:\Users\sauret\AppData\Local\Temp\tmpestrmsrw'
+         cwd: C:\Users\sauret\AppData\Local\Temp\pip-install-v9dluflv\sip
+    Complete output (133 lines):
+    running bdist_wheel
+    running build
+    running build_py
+    creating build
+    creating build\lib.win32-cpython-38
+    creating build\lib.win32-cpython-38\sipbuild
+    copying sipbuild\abstract_builder.py -> build\lib.win32-cpython-38\sipbuild
+    copying sipbuild\abstract_project.py -> build\lib.win32-cpython-38\sipbuild
+    copying sipbuild\api.py -> build\lib.win32-cpython-38\sipbuild
+    copying sipbuild\argument_parser.py -> build\lib.win32-cpython-38\sipbuild
+    copying sipbuild\bindings.py -> build\lib.win32-cpython-38\sipbuild
+    copying sipbuild\bindings_configuration.py -> build\lib.win32-cpython-38\sipbuild
+    copying sipbuild\buildable.py -> build\lib.win32-cpython-38\sipbuild
+    copying sipbuild\builder.py -> build\lib.win32-cpython-38\sipbuild
+    copying sipbuild\configurable.py -> build\lib.win32-cpython-38\sipbuild
+    copying sipbuild\distutils_builder.py -> build\lib.win32-cpython-38\sipbuild
+    copying sipbuild\exceptions.py -> build\lib.win32-cpython-38\sipbuild
+    copying sipbuild\installable.py -> build\lib.win32-cpython-38\sipbuild
+    copying sipbuild\project.py -> build\lib.win32-cpython-38\sipbuild
+    copying sipbuild\pyproject.py -> build\lib.win32-cpython-38\sipbuild
+    copying sipbuild\py_versions.py -> build\lib.win32-cpython-38\sipbuild
+    copying sipbuild\setuptools_builder.py -> build\lib.win32-cpython-38\sipbuild
+    copying sipbuild\toml.py -> build\lib.win32-cpython-38\sipbuild
+    copying sipbuild\version.py -> build\lib.win32-cpython-38\sipbuild
+    copying sipbuild\__init__.py -> build\lib.win32-cpython-38\sipbuild
+    creating build\lib.win32-cpython-38\sipbuild\distinfo
+    copying sipbuild\distinfo\distinfo.py -> build\lib.win32-cpython-38\sipbuild\distinfo
+    copying sipbuild\distinfo\main.py -> build\lib.win32-cpython-38\sipbuild\distinfo
+    copying sipbuild\distinfo\__init__.py -> build\lib.win32-cpython-38\sipbuild\distinfo
+    creating build\lib.win32-cpython-38\sipbuild\generator
+    copying sipbuild\generator\error_log.py -> build\lib.win32-cpython-38\sipbuild\generator
+    copying sipbuild\generator\instantiations.py -> build\lib.win32-cpython-38\sipbuild\generator
+    copying sipbuild\generator\python_slots.py -> build\lib.win32-cpython-38\sipbuild\generator
+    copying sipbuild\generator\scoped_name.py -> build\lib.win32-cpython-38\sipbuild\generator
+    copying sipbuild\generator\specification.py -> build\lib.win32-cpython-38\sipbuild\generator
+    copying sipbuild\generator\templates.py -> build\lib.win32-cpython-38\sipbuild\generator
+    copying sipbuild\generator\utils.py -> build\lib.win32-cpython-38\sipbuild\generator
+    copying sipbuild\generator\__init__.py -> build\lib.win32-cpython-38\sipbuild\generator
+    creating build\lib.win32-cpython-38\sipbuild\module
+    copying sipbuild\module\abi_version.py -> build\lib.win32-cpython-38\sipbuild\module
+    copying sipbuild\module\main.py -> build\lib.win32-cpython-38\sipbuild\module
+    copying sipbuild\module\module.py -> build\lib.win32-cpython-38\sipbuild\module
+    copying sipbuild\module\__init__.py -> build\lib.win32-cpython-38\sipbuild\module
+    creating build\lib.win32-cpython-38\sipbuild\tools
+    copying sipbuild\tools\build.py -> build\lib.win32-cpython-38\sipbuild\tools
+    copying sipbuild\tools\install.py -> build\lib.win32-cpython-38\sipbuild\tools
+    copying sipbuild\tools\sdist.py -> build\lib.win32-cpython-38\sipbuild\tools
+    copying sipbuild\tools\wheel.py -> build\lib.win32-cpython-38\sipbuild\tools
+    copying sipbuild\tools\__init__.py -> build\lib.win32-cpython-38\sipbuild\tools
+    creating build\lib.win32-cpython-38\sipbuild\generator\outputs
+    copying sipbuild\generator\outputs\api.py -> build\lib.win32-cpython-38\sipbuild\generator\outputs
+    copying sipbuild\generator\outputs\extracts.py -> build\lib.win32-cpython-38\sipbuild\generator\outputs
+    copying sipbuild\generator\outputs\pyi.py -> build\lib.win32-cpython-38\sipbuild\generator\outputs
+    copying sipbuild\generator\outputs\type_hints.py -> build\lib.win32-cpython-38\sipbuild\generator\outputs
+    copying sipbuild\generator\outputs\xml.py -> build\lib.win32-cpython-38\sipbuild\generator\outputs
+    copying sipbuild\generator\outputs\__init__.py -> build\lib.win32-cpython-38\sipbuild\generator\outputs
+    creating build\lib.win32-cpython-38\sipbuild\generator\parser
+    copying sipbuild\generator\parser\annotations.py -> build\lib.win32-cpython-38\sipbuild\generator\parser
+    copying sipbuild\generator\parser\parser.py -> build\lib.win32-cpython-38\sipbuild\generator\parser
+    copying sipbuild\generator\parser\parser_manager.py -> build\lib.win32-cpython-38\sipbuild\generator\parser
+    copying sipbuild\generator\parser\parsetab.py -> build\lib.win32-cpython-38\sipbuild\generator\parser
+    copying sipbuild\generator\parser\python_exceptions.py -> build\lib.win32-cpython-38\sipbuild\generator\parser
+    copying sipbuild\generator\parser\rules.py -> build\lib.win32-cpython-38\sipbuild\generator\parser
+    copying sipbuild\generator\parser\tokens.py -> build\lib.win32-cpython-38\sipbuild\generator\parser
+    copying sipbuild\generator\parser\__init__.py -> build\lib.win32-cpython-38\sipbuild\generator\parser
+    creating build\lib.win32-cpython-38\sipbuild\generator\resolver
+    copying sipbuild\generator\resolver\resolver.py -> build\lib.win32-cpython-38\sipbuild\generator\resolver
+    copying sipbuild\generator\resolver\__init__.py -> build\lib.win32-cpython-38\sipbuild\generator\resolver
+    creating build\lib.win32-cpython-38\sipbuild\generator\outputs\formatters
+    copying sipbuild\generator\outputs\formatters\argument.py -> build\lib.win32-cpython-38\sipbuild\generator\outputs\formatters
+    copying sipbuild\generator\outputs\formatters\base_formatter.py -> build\lib.win32-cpython-38\sipbuild\generator\outputs\formatters
+    copying sipbuild\generator\outputs\formatters\enum.py -> build\lib.win32-cpython-38\sipbuild\generator\outputs\formatters
+    copying sipbuild\generator\outputs\formatters\klass.py -> build\lib.win32-cpython-38\sipbuild\generator\outputs\formatters
+    copying sipbuild\generator\outputs\formatters\overload.py -> build\lib.win32-cpython-38\sipbuild\generator\outputs\formatters
+    copying sipbuild\generator\outputs\formatters\scoped.py -> build\lib.win32-cpython-38\sipbuild\generator\outputs\formatters
+    copying sipbuild\generator\outputs\formatters\signature.py -> build\lib.win32-cpython-38\sipbuild\generator\outputs\formatters
+    copying sipbuild\generator\outputs\formatters\template.py -> build\lib.win32-cpython-38\sipbuild\generator\outputs\formatters
+    copying sipbuild\generator\outputs\formatters\utils.py -> build\lib.win32-cpython-38\sipbuild\generator\outputs\formatters
+    copying sipbuild\generator\outputs\formatters\value_list.py -> build\lib.win32-cpython-38\sipbuild\generator\outputs\formatters
+    copying sipbuild\generator\outputs\formatters\variable.py -> build\lib.win32-cpython-38\sipbuild\generator\outputs\formatters
+    copying sipbuild\generator\outputs\formatters\__init__.py -> build\lib.win32-cpython-38\sipbuild\generator\outputs\formatters
+    creating build\lib.win32-cpython-38\sipbuild\module\source
+    creating build\lib.win32-cpython-38\sipbuild\module\source\12
+    copying sipbuild\module\source\12\apiversions.c -> build\lib.win32-cpython-38\sipbuild\module\source\12
+    copying sipbuild\module\source\12\bool.cpp -> build\lib.win32-cpython-38\sipbuild\module\source\12
+    copying sipbuild\module\source\12\descriptors.c -> build\lib.win32-cpython-38\sipbuild\module\source\12
+    copying sipbuild\module\source\12\int_convertors.c -> build\lib.win32-cpython-38\sipbuild\module\source\12
+    copying sipbuild\module\source\12\LICENSE -> build\lib.win32-cpython-38\sipbuild\module\source\12
+    copying sipbuild\module\source\12\LICENSE-GPL2 -> build\lib.win32-cpython-38\sipbuild\module\source\12
+    copying sipbuild\module\source\12\LICENSE-GPL3 -> build\lib.win32-cpython-38\sipbuild\module\source\12
+    copying sipbuild\module\source\12\MANIFEST.in -> build\lib.win32-cpython-38\sipbuild\module\source\12
+    copying sipbuild\module\source\12\objmap.c -> build\lib.win32-cpython-38\sipbuild\module\source\12
+    copying sipbuild\module\source\12\pyproject.toml -> build\lib.win32-cpython-38\sipbuild\module\source\12
+    copying sipbuild\module\source\12\qtlib.c -> build\lib.win32-cpython-38\sipbuild\module\source\12
+    copying sipbuild\module\source\12\README.in -> build\lib.win32-cpython-38\sipbuild\module\source\12
+    copying sipbuild\module\source\12\setup.cfg.in -> build\lib.win32-cpython-38\sipbuild\module\source\12
+    copying sipbuild\module\source\12\setup.py.in -> build\lib.win32-cpython-38\sipbuild\module\source\12
+    copying sipbuild\module\source\12\sip.h.in -> build\lib.win32-cpython-38\sipbuild\module\source\12
+    copying sipbuild\module\source\12\sip.pyi -> build\lib.win32-cpython-38\sipbuild\module\source\12
+    copying sipbuild\module\source\12\sip.rst.in -> build\lib.win32-cpython-38\sipbuild\module\source\12
+    copying sipbuild\module\source\12\sipint.h -> build\lib.win32-cpython-38\sipbuild\module\source\12
+    copying sipbuild\module\source\12\siplib.c -> build\lib.win32-cpython-38\sipbuild\module\source\12
+    copying sipbuild\module\source\12\sip_array.c -> build\lib.win32-cpython-38\sipbuild\module\source\12
+    copying sipbuild\module\source\12\sip_array.h -> build\lib.win32-cpython-38\sipbuild\module\source\12
+    copying sipbuild\module\source\12\threads.c -> build\lib.win32-cpython-38\sipbuild\module\source\12
+    copying sipbuild\module\source\12\voidptr.c -> build\lib.win32-cpython-38\sipbuild\module\source\12
+    creating build\lib.win32-cpython-38\sipbuild\module\source\13
+    copying sipbuild\module\source\13\LICENSE -> build\lib.win32-cpython-38\sipbuild\module\source\13
+    copying sipbuild\module\source\13\LICENSE-GPL2 -> build\lib.win32-cpython-38\sipbuild\module\source\13
+    copying sipbuild\module\source\13\LICENSE-GPL3 -> build\lib.win32-cpython-38\sipbuild\module\source\13
+    copying sipbuild\module\source\13\MANIFEST.in -> build\lib.win32-cpython-38\sipbuild\module\source\13
+    copying sipbuild\module\source\13\pyproject.toml -> build\lib.win32-cpython-38\sipbuild\module\source\13
+    copying sipbuild\module\source\13\README.in -> build\lib.win32-cpython-38\sipbuild\module\source\13
+    copying sipbuild\module\source\13\setup.cfg.in -> build\lib.win32-cpython-38\sipbuild\module\source\13
+    copying sipbuild\module\source\13\setup.py.in -> build\lib.win32-cpython-38\sipbuild\module\source\13
+    copying sipbuild\module\source\13\sip.h.in -> build\lib.win32-cpython-38\sipbuild\module\source\13
+    copying sipbuild\module\source\13\sip.pyi -> build\lib.win32-cpython-38\sipbuild\module\source\13
+    copying sipbuild\module\source\13\sip.rst.in -> build\lib.win32-cpython-38\sipbuild\module\source\13
+    copying sipbuild\module\source\13\sip_array.c -> build\lib.win32-cpython-38\sipbuild\module\source\13
+    copying sipbuild\module\source\13\sip_array.h -> build\lib.win32-cpython-38\sipbuild\module\source\13
+    copying sipbuild\module\source\13\sip_bool.cpp -> build\lib.win32-cpython-38\sipbuild\module\source\13
+    copying sipbuild\module\source\13\sip_core.c -> build\lib.win32-cpython-38\sipbuild\module\source\13
+    copying sipbuild\module\source\13\sip_core.h -> build\lib.win32-cpython-38\sipbuild\module\source\13
+    copying sipbuild\module\source\13\sip_descriptors.c -> build\lib.win32-cpython-38\sipbuild\module\source\13
+    copying sipbuild\module\source\13\sip_enum.c -> build\lib.win32-cpython-38\sipbuild\module\source\13
+    copying sipbuild\module\source\13\sip_enum.h -> build\lib.win32-cpython-38\sipbuild\module\source\13
+    copying sipbuild\module\source\13\sip_int_convertors.c -> build\lib.win32-cpython-38\sipbuild\module\source\13
+    copying sipbuild\module\source\13\sip_object_map.c -> build\lib.win32-cpython-38\sipbuild\module\source\13
+    copying sipbuild\module\source\13\sip_threads.c -> build\lib.win32-cpython-38\sipbuild\module\source\13
+    copying sipbuild\module\source\13\sip_voidptr.c -> build\lib.win32-cpython-38\sipbuild\module\source\13
+    running build_ext
+    building 'sipbuild.code_generator' extension
+    error: Microsoft Visual C++ 14.0 or greater is required. Get it with "Microsoft C++ Build Tools": https://visualstudio.microsoft.com/visual-cpp-build-tools/
+    ----------------------------------------
+    ERROR: Failed building wheel for sip
+    Running setup.py clean for sip
+  Failed to build sip
+  ERROR: Could not build wheels for sip which use PEP 517 and cannot be installed directly
+  WARNING: You are using pip version 19.2.3, however version 23.3 is available.
+  You should consider upgrading via the 'python -m pip install --upgrade pip' command.
+  ----------------------------------------
+ERROR: Command errored out with exit status 1: 'c:\python38\python.exe' 'c:\python38\lib\site-packages\pip' install --ignore-installed --no-user --prefix 'C:\Users\sauret\AppData\Local\Temp\pip-build-env-0wwxt71m\overlay' --no-warn-script-location --no-binary :none: --only-binary :none: -i https://pypi.org/simple -- 'sip >=6.5, <7' 'PyQt-builder >=1.15, <2' Check the logs for full command output.
+WARNING: You are using pip version 19.2.3, however version 23.3 is available.
+You should consider upgrading via the 'python -m pip install --upgrade pip' command.
+
+

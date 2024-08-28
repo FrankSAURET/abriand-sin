@@ -1,6 +1,6 @@
 // The module 'vscode' contains the VS Code extensibility API
 // Import the module and reference it with the alias vscode in your code below
-// Dernière modification : lundi 23 octobre 2023 à 17:28:04
+// Dernière modification : jeudi 18 janvier 2024 à 14:53:57
 import * as vscode from 'vscode';
 const semver = require('semver');
 
@@ -122,7 +122,7 @@ Dernière modification :
 		vscode.workspace.getConfiguration("editor.minimap").update("enabled", false, vscode.ConfigurationTarget.Global);
 		//* Pyqt
 		const fs = require('fs');
-		let dossierQt = "C:\\Qt\\" + fs.readdirSync('c:/Qt')[0] + "\\mingw81_64\\bin\\";
+		let dossierQt = "C:\\Qt\\" + fs.readdirSync('c:/Qt')[0] + "\\mingw_64\\bin\\";
 		let numQt = fs.readdirSync('c:/Qt')[0].charAt(0);
 		vscode.workspace.getConfiguration("pyqt-integration.qtdesigner").update("path", dossierQt + "designer.exe", vscode.ConfigurationTarget.Global);
 		vscode.workspace.getConfiguration("pyqt-integration.linguist").update("cmd", dossierQt + "linguist.exe", vscode.ConfigurationTarget.Global);
@@ -256,7 +256,7 @@ Dernière modification :
 		//#endregion
 		//#region Ajout des modules python
 		// compléter la liste des modules à installer ci-dessous
-		const moduleAInstaller: string = "PythonTurtle pyqt6 pyserial urllib3";
+		const moduleAInstaller: string = "PythonTurtle pyqt6 pyserial urllib3 requests";
 		let retourInstallation: string | undefined = "";
 
 		let daccord = 'Ok';
