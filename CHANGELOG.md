@@ -1,6 +1,8 @@
 # Change Log
 
 ## Released
+##### [0.4.5] - 12 avril 2026
+* Détection automatique de l'interpréteur Python et configuration de `python.defaultInterpreterPath`.
 ##### [0.4.4] -  12 février 2026
 * Suppression d'intellicode.
 ##### [0.4.0] -  28 août 2024

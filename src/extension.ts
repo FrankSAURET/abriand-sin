@@ -16,7 +16,7 @@ export function activate(context: vscode.ExtensionContext) {
 		jamaisLance = true;
 	}
 	//§ Changer ici le numéro de version qui demande une reconfiguration
-	if (semver.gt("0.2.0", numVersionPre)) {
+	if (semver.gt("0.4.5", numVersionPre)) {
 		let daccord = 'Ok';
 		vscode.window.showInformationMessage(`
 			Pour configurer automatiquement l'extension ABriand SIN faites Ok.
@@ -266,6 +266,7 @@ Dernière modification :
 			.then(async selection => {
 				if (selection === daccord) {
 					try {
+						await detectAndSetPythonPath();
 						await findPipLocation(); // Vérifie la présence de PIP. Génère une erreur si ce n'est pas le cas.
 						let dir = "";
 						retourInstallation = await installModule(dir, moduleAInstaller);
@@ -352,6 +353,22 @@ async function installModule(target: string, module: string) {
 			throw new Error(`Erreur : ${exitCode}, ${error}`);
 		}
 		return data;
+	} catch (error) {
+		console.log(error);
+	}
+}
+async function detectAndSetPythonPath() {
+	const { spawn } = require('child_process');
+	try {
+		const child = spawn('python', ['-c', 'import sys; print(sys.executable)']);
+		let pythonPath = "";
+		for await (const chunk of child.stdout) {
+			pythonPath += chunk;
+		}
+		pythonPath = pythonPath.trim();
+		if (pythonPath) {
+			await vscode.workspace.getConfiguration("python").update("defaultInterpreterPath", pythonPath, vscode.ConfigurationTarget.Global);
+		}
 	} catch (error) {
 		console.log(error);
 	}
