@@ -12,6 +12,7 @@ Collection  d'extension pour travailler en SIN.
 
 ## Description
 * Fournis les outils nécessaires pour développer correctement en **Python**. 
+* Fournis un simulateur pico pi / arduino.
 * Fournis les outils pour programmer en **html** et **css**.
 * Fournis une extension (Algorithme Français) pour créer des algorithmes en français.
 * Charge les modules Python nécessaires pour l'année de SIN (turtle, pyqt6, pyserial).
@@ -42,6 +43,7 @@ Collection  d'extension pour travailler en SIN.
 ### Aide au codage
 * [Visual Studio IntelliCode](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode) - Développement assisté par IA
 * [Live Share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare) - Collaboration en ligne.
+* [Kablix](https://marketplace.visualstudio.com/items?itemName=electropol-fr.kablix) - Extension Kablix.
 ### Web
 * [HTML CSS Support](https://marketplace.visualstudio.com/items?itemName=ecmel.vscode-html-css) - Visual Studio Code CSS Intellisense pour HTML
 * [Live Preview](https://marketplace.visualstudio.com/items?itemName=ms-vscode.live-server) - Prévisualiser les fichiers HTML dans un serveur local tout en les éditant dans VSCode

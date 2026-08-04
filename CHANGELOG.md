@@ -1,6 +1,8 @@
 # Change Log
 
 ## Released
+##### [0.4.7] - 4 août 2026
+* Ajout de l'extension Kablix.
 ##### [0.4.5] - 12 avril 2026
 * Détection automatique de l'interpréteur Python et configuration de `python.defaultInterpreterPath`.
 ##### [0.4.4] -  12 février 2026
