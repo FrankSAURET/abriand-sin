@@ -2,7 +2,8 @@
 	"name": "abriand-sin",
 	"displayName": "ABriand SIN",
 	"description": "Pack d'extension à destination des élèves de TSTI2D SIN du lycée Aristide Briand.",
-	"version": "0.4.7",
+	"version": "2026.8.0",
+	"buildNumber": "2026.8.0.1",
 	"author": {
 		"name": "Frank SAURET",
 		"email": "frank.sauret.prof@gmail.com",
@@ -81,6 +82,8 @@
 		"MS-vsliveshare.vsliveshare",
 		"electropol-fr.coloredtheme",
 		"electropol-fr.kablix",
+		"electropol-fr.arduino-vscode-ide",
+		"electropol-fr.drawio-diagrams-editor",
 		"edigrp.pseudo-code-french",
 		"raspberry-pi.raspberry-pi-pico"
 	],

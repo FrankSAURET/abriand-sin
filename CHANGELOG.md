@@ -1,6 +1,11 @@
 # Change Log
 
 ## Released
+##### [2026.8.0] - 25 août 2026
+* Passage à la numérotation calver (`ANNÉE.MOIS.incrément`) : cette version remplace la 0.4.8.
+* Ajout de l'extension Arduino VsCode IDE.
+* Ajout de l'extension Éditer des diagrammes avec draw.io.
+* Mise à jour de la liste des extensions du pack dans le README (IntelliCode retiré, extensions manquantes ajoutées).
 ##### [0.4.7] - 4 août 2026
 * Ajout de l'extension Kablix.
 ##### [0.4.5] - 12 avril 2026
