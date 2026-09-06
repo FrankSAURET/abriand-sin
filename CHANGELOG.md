@@ -1,6 +1,8 @@
 # Change Log
 
 ## Released
+##### [2026.9.0] - 6 septembre 2026
+* Suppression de liveshare.
 ##### [2026.8.0] - 25 août 2026
 * Passage à la numérotation calver (`ANNÉE.MOIS.incrément`) : cette version remplace la 0.4.8.
 * Ajout de l'extension Arduino VsCode IDE.

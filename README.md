@@ -35,7 +35,7 @@ Collection  d'extension pour travailler en SIN.
 ## Extensions dans ce pack
 ### Mise en forme
 * [Better Comments](https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments) - Améliorez vos commentaires de code en annotant avec des alertes, des informations, des tâches à faire et plus encore !
-* [Power Header](https://marketplace.visualstudio.com/items?itemName=epivision.vscode-file-header) - Ajout d'en-tête automatique avec ctrl+alt+h
+* [Power Header](https://marketplace.visualstudio.com/items?itemName=epivision.vscode-file-header) - Ajout d'en-tête automatique.
 * [Colored Theme](https://marketplace.visualstudio.com/items?itemName=electropol-fr.coloredtheme) - Colore les barres de VS Code pour distinguer les fenêtres d'un coup d'œil.
 ### Python
 * [PYQT Integration](https://marketplace.visualstudio.com/items?itemName=zhoufeng.pyqt-integration) - Intégration de Qt Designer et des outils PyQt.
@@ -48,7 +48,6 @@ Collection  d'extension pour travailler en SIN.
 * [Arduino VsCode IDE](https://marketplace.visualstudio.com/items?itemName=electropol-fr.arduino-vscode-ide) - Compilation et téléversement Arduino depuis VS Code (basé sur arduino-cli).
 * [Raspberry Pi Pico](https://marketplace.visualstudio.com/items?itemName=raspberry-pi.raspberry-pi-pico) - Développement pour Raspberry Pi Pico.
 ### Aide au codage
-* [Live Share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare) - Collaboration en ligne.
 * [Path Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense) - Complétion automatique des chemins de fichiers.
 * [Algorithme Français](https://marketplace.visualstudio.com/items?itemName=edigrp.pseudo-code-french) - Écrire des algorithmes en pseudo-code français.
 * [Éditer des diagrammes avec draw.io](https://marketplace.visualstudio.com/items?itemName=electropol-fr.drawio-diagrams-editor) - Éditez vos diagrammes draw.io (app.diagrams.net) directement dans VS Code.
