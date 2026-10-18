@@ -16,7 +16,7 @@ export function activate(context: vscode.ExtensionContext) {
 		jamaisLance = true;
 	}
 	//§ Changer ici le numéro de version qui demande une reconfiguration
-	if (semver.gt("0.4.5", numVersionPre)) {
+	if (semver.gt("2026.10.0", numVersionPre)) {
 		let daccord = 'Ok';
 		vscode.window.showInformationMessage(`
 			Pour configurer automatiquement l'extension ABriand SIN faites Ok.
@@ -130,7 +130,7 @@ Dernière modification :
 		vscode.workspace.getConfiguration("pyqt-integration.pyrcc").update("cmd", "pyrcc" + numQt, vscode.ConfigurationTarget.Global);
 		vscode.workspace.getConfiguration("pyqt-integration.pylupdate").update("cmd", "pylupdate" + numQt, vscode.ConfigurationTarget.Global);
 		vscode.workspace.getConfiguration("pyqt-integration.pyuic.compile").update("addOptions", "--execute", vscode.ConfigurationTarget.Global);
-		//* Telemetry
+		//* Telemetry : coupée par défaut (élèves, dont des mineurs) — voir « Confidentialité » dans le README
 		vscode.workspace.getConfiguration("telemetry").update("telemetryLevel", "off", vscode.ConfigurationTarget.Global);
 		//* Better-comments
 		let bcTag = [

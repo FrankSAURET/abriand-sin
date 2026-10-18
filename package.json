@@ -2,8 +2,8 @@
 	"name": "abriand-sin",
 	"displayName": "ABriand SIN",
 	"description": "Pack d'extension à destination des élèves de TSTI2D SIN du lycée Aristide Briand.",
-	"version": "2026.9.0",
-	"buildNumber": "3",
+	"version": "2026.10.0",
+	"buildNumber": "4",
 	"author": {
 		"name": "Frank SAURET",
 		"email": "frank.sauret.prof@gmail.com",

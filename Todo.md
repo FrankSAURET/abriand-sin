@@ -7,6 +7,11 @@
 1. ⏳ Capture réseau réelle (Fiddler/Wireshark) pour confirmer l'audit de télémétrie
 1. ⏳ Remplacer Live Preview (télémétrie Microsoft à clé fixe) par une alternative sans collecte
 
+# 2026.10.0.4
+1. ✅ Seuil de reconfiguration passé à 2026.10.0 : la télémétrie `off` est réappliquée à la mise à jour.
+1. ✅ CHANGELOG daté du 18 octobre 2026 (publication préparée, non publiée). `version` = 2026.10.0.
+1. ℹ️ Aucune traduction à faire : projet monolingue français. `comment-translate` n'est pas dans ce pack.
+
 # 2026.9.0.3
 1. ✅ Audit de télémétrie du pack et de ses extensions (analyse statique) — classement RGPD fait en conversation.
 1. ✅ README : section « Confidentialité et données personnelles » (réglage global `telemetry.telemetryLevel: off` écrit par « configurer », connexions réseau, draw.io en ligne, information des élèves).

@@ -1,11 +1,12 @@
 # Change Log
 
 ## Released
-##### [2026.10.0] - prochaine publication
+##### [2026.10.0] - 18 octobre 2026
 **Nouveauté**
 * Le README explique désormais la confidentialité : réglage de télémétrie imposé par la commande « configurer » et connexions réseau des extensions du pack.
 
 **Modification**
+* La reconfiguration est proposée à la mise à jour : la télémétrie de VS Code (`telemetry.telemetryLevel`) est coupée par défaut.
 * Suppression de PyQt Integration.
 ##### [2026.9.0] - 6 septembre 2026
 * Suppression de liveshare.
