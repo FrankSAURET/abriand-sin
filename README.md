@@ -26,7 +26,6 @@ Collection  d'extension pour travailler en SIN.
 * Configuration du poste de travail - lancer la commande **F1** puis « **abriand-sin : configurer** ».
 * Pour lancer le tuto, faire : « Aide > Prise en main > Ouvrir une procédure pas à pas... » et choisir « Bien commencer en SIN avec Visual Studio ».
 
-
 ## Extensions dans ce pack
 ### Mise en forme
 * [Better Comments](https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments) - Améliorez vos commentaires de code en annotant avec des alertes, des informations, des tâches à faire et plus encore !
@@ -53,7 +52,8 @@ Collection  d'extension pour travailler en SIN.
 Ce pack est destiné à des élèves, dont des mineurs. Voici ce qui est configuré et ce qui peut sortir du poste.
 
 ### Télémétrie désactivée par la commande « configurer »
-Au démarrage de VS Code, une fois par version de l'extension, ABriand SIN écrit `telemetry.telemetryLevel` à `off` dans les paramètres **utilisateur** (global, tous les espaces de travail). La commande « **abriand-sin : configurer** » fait de même. Aucune confirmation n'est demandée : le but est de protéger l'élève. Les extensions Microsoft du pack (Python, Pylance, Live Preview) respectent ce réglage et n'envoient alors plus de données d'usage ni d'erreurs. Pour la réactiver : Paramètres > « telemetry.telemetryLevel » > `all`. Si l'élève réactive la télémétrie, ces extensions peuvent envoyer à Microsoft (hors Union européenne) un identifiant de machine, l'adresse IP, des événements d'usage et des rapports d'erreurs.
+
+Au démarrage de VS Code, une fois par version de l'extension, ABriand SIN écrit `telemetry.telemetryLevel` à `off` dans les paramètres **utilisateur** (global, tous les espaces de travail). La commande « **abriand-sin : configurer** » fait de même. Aucune confirmation n'est demandée : le but est de protéger l'élève. Les extensions Microsoft du pack (Python, Pylance, Live Preview) respectent ce réglage et n'envoient alors plus de données d'usage ni d'erreurs. Si l'élève réactive la télémétrie, ces extensions peuvent envoyer à Microsoft (hors Union européenne) un identifiant de machine, l'adresse IP, des événements d'usage et des rapports d'erreurs.
 
 ### Connexions réseau restantes (même télémétrie coupée)
 Ces connexions ne portent pas de données de l'élève, mais le serveur contacté voit l'adresse IP et l'agent utilisateur.
@@ -68,6 +68,3 @@ Ces connexions ne portent pas de données de l'élève, mais le serveur contact�
 
 ### Cas particulier : draw.io en ligne
 Par défaut, draw.io fonctionne **hors ligne**. Si l'élève désactive ce mode, le contenu des diagrammes transite par `embed.diagrams.net`.
-
-### Information de l'élève
-L'établissement ou l'enseignant doit informer les élèves (et leurs représentants légaux pour les mineurs) de ces traitements, par exemple dans le règlement intérieur ou la charte informatique.
