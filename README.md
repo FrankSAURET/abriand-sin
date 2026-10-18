@@ -23,14 +23,9 @@ Collection  d'extension pour travailler en SIN.
     * Extrait de code, 
     * Amélioration des commentaires (voir exemples ci-dessous),
     * Quelques snippets.
-* Collaboration avec live share. 
-* Configuration du poste de travail (PyQt et Header) - lancer la commande **F1** puis « **abriand-sin : configurer** ».
+* Configuration du poste de travail - lancer la commande **F1** puis « **abriand-sin : configurer** ».
 * Pour lancer le tuto, faire : « Aide > Prise en main > Ouvrir une procédure pas à pas... » et choisir « Bien commencer en SIN avec Visual Studio ».
 
-## Les snippets pour PyQt  
-* **QtForm** ou Form : Ajoute le code permettant de lier un formulaire dessiné dans Qt Designer.
-* **QtBout** ou Bout : Ajoute le slot automatique pour un bouton.
-* **QtSlid** ou Slid  : Ajoute le slot automatique pour un slider.
 
 ## Extensions dans ce pack
 ### Mise en forme
@@ -38,7 +33,6 @@ Collection  d'extension pour travailler en SIN.
 * [Power Header](https://marketplace.visualstudio.com/items?itemName=epivision.vscode-file-header) - Ajout d'en-tête automatique.
 * [Colored Theme](https://marketplace.visualstudio.com/items?itemName=electropol-fr.coloredtheme) - Colore les barres de VS Code pour distinguer les fenêtres d'un coup d'œil.
 ### Python
-* [PYQT Integration](https://marketplace.visualstudio.com/items?itemName=zhoufeng.pyqt-integration) - Intégration de Qt Designer et des outils PyQt.
 * [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python) - IntelliSense (Pylance), Linting, Débogage (multithread, à distance), Jupyter Notebooks, formatage de code, refactorisation, tests unitaires, etc.
 * [Pylance](https://marketplace.visualstudio.com/items?itemName=ms-python.vscode-pylance) - Un serveur de langage performant et riche en fonctionnalités pour Python dans VS Code
 * [Python Indent](https://marketplace.visualstudio.com/items?itemName=KevinRose.vsc-python-indent) - Corriger l'indentation Python.
@@ -54,3 +48,26 @@ Collection  d'extension pour travailler en SIN.
 ### Web
 * [HTML CSS Support](https://marketplace.visualstudio.com/items?itemName=ecmel.vscode-html-css) - Visual Studio Code CSS Intellisense pour HTML
 * [Live Preview](https://marketplace.visualstudio.com/items?itemName=ms-vscode.live-server) - Prévisualiser les fichiers HTML dans un serveur local tout en les éditant dans VSCode
+
+## Confidentialité et données personnelles
+Ce pack est destiné à des élèves, dont des mineurs. Voici ce qui est configuré et ce qui peut sortir du poste.
+
+### Télémétrie désactivée par la commande « configurer »
+La commande « **abriand-sin : configurer** » écrit `telemetry.telemetryLevel` à `off` dans les paramètres **utilisateur** (global, tous les espaces de travail). Aucune confirmation n'est demandée : le but est de protéger l'élève. Les extensions Microsoft du pack (Python, Pylance, Live Preview) respectent ce réglage et n'envoient alors plus de données d'usage ni d'erreurs. Pour la réactiver : Paramètres > « telemetry.telemetryLevel » > `all`. Tant que la commande n'a pas été lancée, ces extensions peuvent envoyer à Microsoft (hors Union européenne) un identifiant de machine, l'adresse IP, des événements d'usage et des rapports d'erreurs.
+
+### Connexions réseau restantes (même télémétrie coupée)
+Ces connexions ne portent pas de données de l'élève, mais le serveur contacté voit l'adresse IP et l'agent utilisateur.
+
+| Extension | Serveur | Raison |
+|---|---|---|
+| ABriand SIN | pypi.org | Installation des modules Python (pip), après accord de l'élève. |
+| Raspberry Pi Pico | github.com, api.github.com, bootstrap.pypa.io | Téléchargement du SDK, des outils de construction et de pip. |
+| Arduino VsCode IDE | api.github.com, github.com, mcudude.github.io | Version et téléchargement d'arduino-cli, index de cartes. |
+| Kablix | registry.npmjs.org, raw.githubusercontent.com, micropython.org | Vérification des mises à jour (démarrage), composants, micrologiciel. |
+| Éditer des diagrammes avec draw.io | api.github.com | Vérification de version, au plus une fois par 24 h. |
+
+### Cas particulier : draw.io en ligne
+Par défaut, draw.io fonctionne **hors ligne**. Si l'élève désactive ce mode, le contenu des diagrammes transite par `embed.diagrams.net`.
+
+### Information de l'élève
+L'établissement ou l'enseignant doit informer les élèves (et leurs représentants légaux pour les mineurs) de ces traitements, par exemple dans le règlement intérieur ou la charte informatique.

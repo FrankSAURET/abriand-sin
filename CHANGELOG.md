@@ -1,6 +1,12 @@
 # Change Log
 
 ## Released
+##### [2026.10.0] - prochaine publication
+**Nouveauté**
+* Le README explique désormais la confidentialité : réglage de télémétrie imposé par la commande « configurer » et connexions réseau des extensions du pack.
+
+**Modification**
+* Suppression de PyQt Integration.
 ##### [2026.9.0] - 6 septembre 2026
 * Suppression de liveshare.
 ##### [2026.8.0] - 25 août 2026
