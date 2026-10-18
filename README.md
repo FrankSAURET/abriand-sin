@@ -53,7 +53,7 @@ Collection  d'extension pour travailler en SIN.
 Ce pack est destiné à des élèves, dont des mineurs. Voici ce qui est configuré et ce qui peut sortir du poste.
 
 ### Télémétrie désactivée par la commande « configurer »
-La commande « **abriand-sin : configurer** » écrit `telemetry.telemetryLevel` à `off` dans les paramètres **utilisateur** (global, tous les espaces de travail). Aucune confirmation n'est demandée : le but est de protéger l'élève. Les extensions Microsoft du pack (Python, Pylance, Live Preview) respectent ce réglage et n'envoient alors plus de données d'usage ni d'erreurs. Pour la réactiver : Paramètres > « telemetry.telemetryLevel » > `all`. Tant que la commande n'a pas été lancée, ces extensions peuvent envoyer à Microsoft (hors Union européenne) un identifiant de machine, l'adresse IP, des événements d'usage et des rapports d'erreurs.
+Au démarrage de VS Code, une fois par version de l'extension, ABriand SIN écrit `telemetry.telemetryLevel` à `off` dans les paramètres **utilisateur** (global, tous les espaces de travail). La commande « **abriand-sin : configurer** » fait de même. Aucune confirmation n'est demandée : le but est de protéger l'élève. Les extensions Microsoft du pack (Python, Pylance, Live Preview) respectent ce réglage et n'envoient alors plus de données d'usage ni d'erreurs. Pour la réactiver : Paramètres > « telemetry.telemetryLevel » > `all`. Si l'élève réactive la télémétrie, ces extensions peuvent envoyer à Microsoft (hors Union européenne) un identifiant de machine, l'adresse IP, des événements d'usage et des rapports d'erreurs.
 
 ### Connexions réseau restantes (même télémétrie coupée)
 Ces connexions ne portent pas de données de l'élève, mais le serveur contacté voit l'adresse IP et l'agent utilisateur.

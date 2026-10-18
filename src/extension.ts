@@ -15,6 +15,13 @@ export function activate(context: vscode.ExtensionContext) {
 		numVersionPre = "0.0.0";
 		jamaisLance = true;
 	}
+	//* Télémétrie coupée une fois par version, sans attendre le « Ok » de l'élève (élèves, dont des mineurs).
+	// Indépendant de la fenêtre de reconfiguration ci-dessous ; l'élève peut ensuite la réactiver.
+	const versionTelemetrie = "2026.10.0";
+	if (semver.gt(versionTelemetrie, context.globalState.get<string>("telemetrieOffVersion", "0.0.0"))) {
+		vscode.workspace.getConfiguration("telemetry").update("telemetryLevel", "off", vscode.ConfigurationTarget.Global)
+			.then(() => context.globalState.update("telemetrieOffVersion", versionTelemetrie));
+	}
 	//§ Changer ici le numéro de version qui demande une reconfiguration
 	if (semver.gt("2026.10.0", numVersionPre)) {
 		let daccord = 'Ok';

@@ -6,7 +6,7 @@
 * Le README explique désormais la confidentialité : réglage de télémétrie imposé par la commande « configurer » et connexions réseau des extensions du pack.
 
 **Modification**
-* La reconfiguration est proposée à la mise à jour : la télémétrie de VS Code (`telemetry.telemetryLevel`) est coupée par défaut.
+* La télémétrie de VS Code (`telemetry.telemetryLevel`) est coupée automatiquement au démarrage, une fois par version, sans attendre la fenêtre de reconfiguration.
 * Suppression de PyQt Integration.
 ##### [2026.9.0] - 6 septembre 2026
 * Suppression de liveshare.
