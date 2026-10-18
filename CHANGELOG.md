@@ -1,7 +1,7 @@
 # Change Log
 
 ## Released
-##### [2026.10.0] - 18 octobre 2026
+##### [2026.10.1] - 18 octobre 2026
 **Nouveauté**
 * Le README explique désormais la confidentialité : réglage de télémétrie imposé par la commande « configurer » et connexions réseau des extensions du pack.
 
